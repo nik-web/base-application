@@ -1,0 +1,30 @@
+<?php
+/**
+ * Base application with Laminas MVC framework
+ * 
+ * This file is a partial view script for the brand.
+ * Use this partial with Laminas\View\Helper\Navigation\Menu.
+ *  
+ * @author     Niklaus Höpfner <editor@nik-web.net>
+ * @version    1.0.0
+ * @since      1.0.0
+ */
+
+// Laminas\Navigation\Page\Mvc
+$homePage = $container->findOneBy('route', 'home');
+$brand = 'My Brand';
+
+if ($homePage->isActive()) {
+?> 
+<strong id="brand-home">
+    <?= $brand ?>
+</strong>
+<?php
+} else {
+?>
+<a id="brand" href="<?= $homePage->getHref(); ?>">
+    <?= $brand ?>
+</a>
+<?php
+}
+?>

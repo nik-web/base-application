@@ -1,0 +1,21 @@
+{
+    "name": "nik-web/base-application",
+    "description": "Base application with Laminas  MVC framework.",
+    "type": "project",
+    "license": "BSD-3-Clause",
+    "authors": [
+        {
+            "name": "Niklaus Höpfner",
+            "email": "editor@nik-web.net"
+        }
+    ],
+    "require": {
+        "laminas/laminas-mvc": "^3.1",
+        "laminas/laminas-navigation": "^2.9"
+    },
+    "autoload": {
+        "psr-4": {
+            "Application\\": "module/Application/src/"
+        }
+    }
+}

@@ -1,0 +1,5 @@
+.sass-cache/
+vendor/
+data/cache/*
+!data/cache/.gitkeep
+nbproject/

@@ -1,0 +1,77 @@
+<?php
+
+/**
+ * Base application with Laminas MVC framework
+ * 
+ * Imprint template
+ * 
+ * @package    Application
+ * @author     Niklaus Höpfner <editor@nik-web.net>
+ * @copyright  Copyright (c) Niklaus Höpfner
+ * @version    1.0.0
+ * @since      1.0.0
+ */
+
+$this->headTitle('Das ist das Impressum unserer Webanwendung');
+$description = 'Das ist die Meta-Beschreibung für das Impressum dieser Webanwendung';
+$keywords = 'Webanwendung, Impressum,';
+$this->headMeta()->appendName('description', $description)
+    ->appendName('keywords', $keywords);
+?>
+<header id="main-header">
+    <h1>
+        Impressum
+    </h1>
+    <p>
+        Anbieterkennzeichnung gemäß §&nbsp;5&nbsp;TMG
+    </p>
+</header>
+<section>
+    <h2>
+        Anbieter
+    </h2>
+    <p>
+        <?= $firstName . ' ' . $lastName; ?><br>
+        <?= $businessType . ' (' . $companyForm . ')'; ?><br>
+        <?= $street . ' ' . $houseNumber; ?><br>
+        <?= $postcode . ' ' . $city; ?><br>
+        <?= $country; ?>
+    </p>
+    <p>
+    <?php
+        if ($phoneNumber) {
+    ?>
+        <strong>Telefon: </strong><?= $phoneNumber; ?><br>
+    <?php
+        }
+        if ($faxNumber) {
+    ?>
+        <strong>Fax: </strong><?= $faxNumber; ?><br>
+    <?php    
+        }
+        if ($mobilePhoneNumber) {
+    ?>
+        <strong>Mobil-Telefon: </strong><?= $mobilePhoneNumber; ?><br>
+    <?php
+        }
+    ?>
+        <strong>E-Mail: </strong><?= $contactEmail; ?>
+    </p>
+</section>
+<section>
+    <h2>
+        Umsatzsteuer-ID
+    </h2>
+    <p>
+        Umsatzsteuer-Identifikationsnummer gem&auml;&szlig; &sect;&nbsp;27&nbsp;a&nbsp;Umsatzsteuergesetz:<br />
+        <?= $taxIdNumber; ?>
+    </p>
+</section>
+<section>
+    <h2>
+        Verantwortlich f&uuml;r den Inhalt nach &sect;&nbsp;55&nbsp;Abs.&nbsp;2&nbsp;RStV
+    </h2>
+    <p>
+        <?= $firstName . ' ' . $lastName; ?> (Anschrift wie oben)
+    </p>
+</section>

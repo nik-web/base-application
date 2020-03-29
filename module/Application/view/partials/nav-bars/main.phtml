@@ -1,0 +1,74 @@
+<?php
+/**
+ * Base application with Laminas MVC framework
+ * 
+ * This file is a view partial script for the main navigationbar.
+ * Use this partial with Laminas\View\Helper\Navigation\Menu.
+ *  
+ * @author     Niklaus Höpfner <editor@nik-web.net>
+ * @version    1.0.0
+ * @since      1.0.0
+ */
+?>
+<ul id="main-nav-bar">
+<?php
+    foreach ($container as $page) {
+        if (!$this->navigation('main_nav')->accept($page)) {
+            continue;  
+        }
+        if (!$page->hasPages()) {
+            if ($page->isActive()) {
+?>
+    <li class="main-nav-item-current">
+        <strong>
+            <?=  $page ?>
+        </strong>
+    </li>
+<?php
+            } else {
+?>
+    <li class="main-nav-item">
+        <a class="main-nav-link" href="<?= $page->getHref() ?>">
+            <?=  $page ?>
+        </a>
+    </li>
+<?php
+            }
+        } else {
+?>
+    <li id="<?= $page->getId() ?>" class="main-nav-item-dropdown">
+        <a class="main-nav-link" href="#">
+            <?= $page . ' &darr;' ?>
+        </a>
+        <ul id="<?= $page->getId() . '-menu' ?>" class="main-nav-bar-dropdown">
+        <?php
+            foreach ($page->getPages() as $child) {
+                if (!$this->navigation()->accept($child)) {
+                    continue;
+                }
+                if ($child->isActive()) {
+        ?>
+            <li class="main-nav-dropdown-item-current">
+                <strong>
+                    <?= $child ?>
+                </strong>
+            </li>
+            <?php
+                } else {
+            ?>
+            <li class="main-nav-dropdown-item">
+                <a class="main-nav-link" href="<?= $child->getHref() ?>">
+                    <?= $child ?>
+                </a>
+            </li>
+            <?php
+                }      
+            }
+        ?>
+        </ul>
+    </li>
+<?php
+        }
+    }
+?>
+</ul>

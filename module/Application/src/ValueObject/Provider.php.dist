@@ -1,0 +1,127 @@
+<?php
+
+/**
+ * Base application with Laninas MVC framework
+ * 
+ * NOTE: Copy this file without the .dist extension and change the values of 
+ * the constants.
+ *
+ * @package Application
+ * @subpackage Application\ValueObject  
+ * @author     Niklaus Höpfner <editor@nik-web.net>
+ * @version    1.0.0
+ * @since      1.0.0
+ */
+
+namespace Application\ValueObject;
+
+/**
+ * Provider data class
+ *
+ * @package Application
+ * @subpackage Application\ValueObject
+ */
+class Provider {
+    
+    /**
+     * Provider last name for this web application
+     * 
+     * @const string
+     */
+    const LAST_NAME = 'Musterman';
+    
+    /**
+     * Provider first name for this web application
+     * 
+     * @const string
+     */
+    const FIRST_NAME = 'Muster';
+    
+    /**
+     * Provider company form of this web application
+     * 
+     * @const string 
+     */
+    const COMPANY_FORM = 'Einzelunternehmen';
+    
+    /**
+     * Provider type of business of this web application
+     * 
+     * @const string
+     */
+    const BUSINESS_TYPE = 'Bezeichnung der Geschäftsart';
+    
+    /**
+     * Provider street for this web application
+     * 
+     * @const string-
+     */
+    const STREET = 'Musterweg';
+    
+    /**
+     * Provider house number for this web application
+     * 
+     * @const string
+     */
+    const HOUSE_NUMBER = '00';
+    
+    /**
+     * Provider postcode for this web application
+     * 
+     * @const string
+     */
+    const POSTCODE = '00000';
+    
+    /**
+     * Provider city for this web application
+     * 
+     * @const string
+     */
+    const CITY = 'Musterstraße';
+    
+    /** Provider country for this web application
+     * 
+     * @const string
+     */
+    const COUNTRY = 'Deutschland';
+    
+    /**
+     * Provider state for this web application
+     * 
+     * @const string
+     */
+    const STATE = 'Muster-Bundesland';
+    
+    /**
+     * Provider phone number for this web application
+     * 
+     * @const string
+     */
+    const PHONE_NUMBER = '';
+    
+    /**
+     * Provider fax number for this web application
+     */
+    const FAX_NUMBER = '';
+    
+    /**
+     * Provider mabile phone number for this web application
+     * 
+     * @const string
+     */
+    const MOBILE_PHONE_NUMBER = '+49 123 445566';
+    
+    /**
+     * Provider contact e-mail address for this web application
+     * 
+     * @const string
+     */
+    const CONTACT_EMAIL = 'kontakt@musterfirma.de';
+    
+    /**
+     * Provider sales tax identification number
+     * 
+     * @const string
+     */
+    const TAX_ID_NUMBER = 'DE999 999 999';
+}

@@ -1,0 +1,23 @@
+<?php
+
+/**
+ * Base application with Laminas MVC framework
+ * 
+ * Privacy policy view template
+ *  
+ * @author     Niklaus Höpfner <editor@nik-web.net>
+ * @version    1.0.0
+ * @since      1.0.0
+ */
+
+$this->headTitle('Das ist die Datenschutzerklärung dieser Webanwendung');
+$description = 'Das ist die Meta-Beschreibung für die Datenschutzerklärung dieser Webanwendung';
+$keywords = 'Webanwendung, Datenschutz, Datenschutzerklärung';
+$this->headMeta()->appendName('description', $description)
+    ->appendName('keywords', $keywords);
+?>
+<header id="main-header">
+    <h1>
+        Datenschutzerkl&auml;rung
+    </h1>
+</header>

@@ -1,0 +1,43 @@
+<?= $this->doctype() ."\n" ?>
+<html lang="de">
+    <head>
+        <meta charset="utf-8">
+        <?= $this->headTitle()->setAutoEscape(false) . "\n" ?>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <?= $this->headMeta() ?>
+        <!-- Favicon and le styles -->
+        <?= $this->headLink(['rel' => 'shortcut icon', 'type' => 'image/vnd.microsoft.icon', 'href' => $this->basePath() . '/img/favicon.ico'])
+            ->prependStylesheet($this->basePath('css/styles.css')) ?>
+    </head>
+    <body>
+        <header id="site-header">
+            <div class="site-width-container">
+                <?= $this->navigation('main_nav')->menu()->setPartial('partials/nav-bars/brand') . "\n" ; ?>
+            </div>
+        </header>
+        <nav id="site-nav">
+            <div class="site-width-container">
+                <div class="hamburg">
+                    <span class="hamburg-line"></span>
+                    <span class="hamburg-line"></span>
+                    <span class="hamburg-line"></span>
+                </div>
+                <?= $this->navigation('main_nav')->menu()->setPartial('partials/nav-bars/main') . "\n" ; ?>
+            </div>
+        </nav>
+        <div id="site-flex" class="site-width-container">
+            <main>
+                <?= $this->content   ."\n" ?>
+            </main>
+        </div>
+        <footer id="site-footer">
+            <div class="site-width-container">
+                <?= $this->navigation('meta_nav')->menu()->setPartial('partials/nav-bars/meta') . "\n" ; ?>
+            </div>
+        </footer>
+        <!-- Scripts -->
+        <?= $this->inlineScript()
+            ->prependFile($this->basePath('js/main.js'));
+        ?>
+    </body>
+</html>
