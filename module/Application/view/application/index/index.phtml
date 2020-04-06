@@ -22,43 +22,69 @@ $this->headMeta()->appendName('description', $description)
     <h1>
         Startseite
     </h1>
-    <p>
+    <p class="main-header-p">
         Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, 
         eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus.
     </p>
 </header>
-<p>
-    Lorem ipsum dolor <strong>Das ist mit Strong hervorgehoben </strong>sit amet,
-    consectetuer adipiscing elit. Aenean commodo 
-    ligula <a href="#" title="Das ist ein Textlink">Das ist ein Textlink</a> 
-    eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis 
-    parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec,
-    pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec 
-    pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, 
-    rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede 
-    mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. 
-    Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, 
-    eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. 
-    Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet.
-</p>
-<ul>
-    <li>Suchmaschinen
-        <ul>
-            <li>Google</li>
-            <li>Bing</li>
-            <li>Ask.com</li>
-        </ul>
-    </li>
-    <li>Verzeichnisse
-        <ul>
-            <li>Yahoo</li>
-            <li>Web.de</li>
-        </ul>
-    </li>
-    <li>Was anderes</li>
-    <li>Noch was anderes</li>
-</ul>
-<button name="button">Press me</button>
+<section>
+    <header>
+        <h2>
+            Das ist eine h2 in Section
+        </h2>
+    </header>
+    <p>
+        Lorem ipsum dolor <strong>Das ist Strong </strong>sit amet,
+        consectetuer adipiscing elit. Aenean commodo 
+        ligula <a href="#" title="Das ist ein Textlink">Das ist ein Textlink</a>
+    </p>
+    <p>
+        Zweiter Absatz eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis 
+        parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec,
+    </p>
+</section>
+<section>
+    <h2>
+        h2 Überschrift
+    </h2>
+    <p>
+        Langer Absatz <strong>Das ist mit Strong hervorgehoben </strong>sit amet,
+        consectetuer adipiscing elit. Aenean commodo 
+        ligula <a href="#" title="Das ist ein Textlink">Das ist ein Textlink</a> 
+        eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis 
+        parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec,
+        pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec 
+        pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, 
+        rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede 
+        mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. 
+        Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, 
+        eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. 
+        Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet.
+    </p>
+</section>
+<section>
+    <h2>
+        Das ist eine Liste
+    </h2>
+    <ul>
+        <li>Suchmaschinen
+            <ul>
+                <li>Google</li>
+                <li>Bing</li>
+                <li>Ask.com</li>
+            </ul>
+        </li>
+        <li><button>Verzeichnisse</button>
+            <ul>
+                <li><a href="#" title="Das ist ein Link">Yahoo</a></li>
+                <li>Web.de</li>
+            </ul>
+        </li>
+        <li>Was anderes</li>
+        <li>Noch was anderes</li>
+    </ul>
+</section>
+<button>Default Button</button>
 
 <div>
     <label for="ice-cream-choice">
@@ -75,4 +101,24 @@ $this->headMeta()->appendName('description', $description)
         <option value="Vanilla">
     </datalist>
 </div>
+<section>
+    <h2>
+        Test
+    </h2>
+    <p>
+        <a href="<?php echo $this->url('imprint'); ?>" title="Zum Impressum der Website" onclick="return oeffnen(this.href, '320', '320')">
+            dem Impressum dieser Website 
+        </a>
+    </p>
+    
+    <script>
+      function oeffnen(url, widt, height) {
+        //var fenster = window.open(url, 'f', 'width=500,height=300');
+        var size = "width=" + widt + "," + "height=" + height;
+        var fenster = window.open(url, 'f', size);
+        fenster.focus();
+        return false;
+      }
+    </script>
+</section>
     

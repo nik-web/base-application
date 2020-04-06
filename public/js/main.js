@@ -6,15 +6,16 @@
  */
 
 var hamburger = document.querySelector('.hamburg');
-hamburger.onclick = function () {
-    
-    this.classList.toggle ('open-hamburg');
-    
-    var nav = document.getElementById('main-nav-bar');
-    nav.classList.toggle ('open-main-nav-bar');
-    
-};
+if (hamburger) {
+    hamburger.onclick = function () {
 
+        this.classList.toggle ('open-hamburg');
+
+        var nav = document.getElementById('main-nav-bar');
+        nav.classList.toggle ('open-main-nav-bar');
+
+    };
+};
 
 // object HTMLCollection of <ul class="main-nav-bar-dropdown">
 var mainNavDropdownMenus = document.getElementsByClassName('main-nav-bar-dropdown');
@@ -24,13 +25,17 @@ if (0 !== mainNavDropdownMenus.length) {
      * When the user clicks on the main navigation item dropdown, toggle between 
      * hiding and showing the dropdown this dropdown menu.
      */
-    var firstMainNavDropdownItemID = 'info_dropdown';
-    var firstMainNavDropdownItem = document.getElementById(firstMainNavDropdownItemID);
+    var firstMainNavDropdownButtonID = 'info_dropdown';
+    var firstMainNavDropdownButton = document.getElementById(firstMainNavDropdownButtonID);
 
-    if (firstMainNavDropdownItem) {
-        var firstMainNavDropdownMenuID = firstMainNavDropdownItemID +  '-menu';
+    if (firstMainNavDropdownButton) {
+        var firstMainNavDropdownMenuID = firstMainNavDropdownButtonID +  '-menu';
         
-        firstMainNavDropdownItem.addEventListener('click', function(){
+        //alert (firstMainNavDropdownMenuID);
+        
+        firstMainNavDropdownButton.addEventListener('click', function(){
+            
+            //alert ('Hallo!');
 
             for (var i = 0; i < mainNavDropdownMenus.length; i++) {
                 var openDropdown = mainNavDropdownMenus[i];
@@ -46,13 +51,13 @@ if (0 !== mainNavDropdownMenus.length) {
         });
     }
 
-    var secondMainNavDropdownItemID = 'gallery_dropdown';
-    var secondMainNavDropdownItem = document.getElementById(secondMainNavDropdownItemID);
+    var secondMainNavDropdownButtonID = 'gallery_dropdown';
+    var secondMainNavDropdownButton = document.getElementById(secondMainNavDropdownButtonID);
 
-    if (secondMainNavDropdownItem) {
-        var secondMainNavDropdownMenuID = secondMainNavDropdownItemID +  '-menu';
+    if (secondMainNavDropdownButton) {
+        var secondMainNavDropdownMenuID = secondMainNavDropdownButtonID +  '-menu';
         
-        secondMainNavDropdownItem.addEventListener('click', function(){
+        secondMainNavDropdownButton.addEventListener('click', function(){
             
             for (var i = 0; i < mainNavDropdownMenus.length; i++) {
                 var openDropdown = mainNavDropdownMenus[i];
@@ -70,7 +75,7 @@ if (0 !== mainNavDropdownMenus.length) {
     
     // Close the dropdown menu if the user clicks outside of the dropdown link
     window.onclick = function(event) {
-        if ( !event.target.matches('.main-nav-item-dropdown a')) {
+        if ( !event.target.matches('.main-nav-item-dropdown button')) {
             var dropdowns = document.getElementsByClassName("main-nav-bar-dropdown");
             for (var i = 0; i < dropdowns.length; i++) {
                 var openDropdown = dropdowns[i];

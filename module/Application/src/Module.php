@@ -15,6 +15,9 @@ declare(strict_types=1);
 namespace Application;
 
 use Laminas\ModuleManager\Feature\ConfigProviderInterface;
+use Laminas\ModuleManager\Feature\BootstrapListenerInterface;
+use Laminas\EventManager\EventInterface;
+use Application\ValueObject\Provider;
 
 /**
  * Application module class
@@ -22,7 +25,7 @@ use Laminas\ModuleManager\Feature\ConfigProviderInterface;
  * @package Application
  */
 
-class Module implements ConfigProviderInterface
+class Module implements ConfigProviderInterface, BootstrapListenerInterface
 {
     
     /**
@@ -31,5 +34,15 @@ class Module implements ConfigProviderInterface
     public function getConfig() : array
     {
         return include __DIR__ . '/../config/module.config.php';
+    }
+    
+    /**
+     * {@inheritDoc}
+     */
+    public function onBootstrap(EventInterface $e)
+    {
+        $viewModel = $e->getApplication()->getMvcEvent()->getViewModel();
+        $siteCopyrightNotice = Provider::getCopyrightNotice();
+        $viewModel->siteCopyrightNotice = $siteCopyrightNotice;
     }
 }

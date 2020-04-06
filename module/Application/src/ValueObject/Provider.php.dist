@@ -124,4 +124,29 @@ class Provider {
      * @const string
      */
     const TAX_ID_NUMBER = 'DE999 999 999';
+    
+    /**
+     * Year of publication
+     * 
+     * @const string
+     */
+    const YEAR_OF_PUBLICATION = '2019';
+    
+    /**
+     * Get copyright notice
+     * 
+     * @return string $copyrightNotice
+     */
+    static function getCopyrightNotice()
+    {
+        if (date('Y') === self::YEAR_OF_PUBLICATION) {
+            $datePart = date('Y');
+        } else {
+            $datePart = self::YEAR_OF_PUBLICATION . ' - ' . date('Y');
+        }
+        $copyrightNotice =  '&copy; ' . $datePart . ' ' . self::FIRST_NAME . ' '
+            . self::LAST_NAME;
+        
+        return $copyrightNotice;
+    }
 }

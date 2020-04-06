@@ -55,11 +55,6 @@ return[
                     'route'  => 'imprint',
                     'target' => '_self',
                 ],
-                'privacy_policy' => [
-                    'label'  => 'Datenschutz',
-                    'route'  => 'privacy-policy',
-                    'target' => '_self',
-                ],
                 'agb' => [
                     'label' => 'AGB',
                     'uri'   => '#',

@@ -36,10 +36,21 @@
             }
         } else {
 ?>
-    <li id="<?= $page->getId() ?>" class="main-nav-item-dropdown">
-        <a class="main-nav-link" href="#">
+    <li class="main-nav-item-dropdown">
+        <?php
+            $classValue = 'main-nav-button';
+            foreach ($page->getPages() as $child) {
+                if (!$this->navigation()->accept($child)) {
+                    continue;
+                }
+                if ($child->isActive()) {
+                    $classValue = 'main-nav-button-active';
+                }
+            }
+        ?>
+        <button id="<?= $page->getId(); ?>" class="<?= $classValue; ?>">
             <?= $page . ' &darr;' ?>
-        </a>
+        </button>
         <ul id="<?= $page->getId() . '-menu' ?>" class="main-nav-bar-dropdown">
         <?php
             foreach ($page->getPages() as $child) {
