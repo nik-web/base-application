@@ -1,0 +1,25 @@
+<?php
+
+/**
+ * This file is part of base application with Laminas MVC framework
+ * 
+ * Additional modules to include when in development mode.
+ * Configuration overrides during development mode.
+ * 
+ * @package    base-application
+ * @author     Niklaus Höpfner <editor@nik-web.net>
+ * @license    https://opensource.org/licenses/BSD-3-Clause The BSD-3-Clause License
+ * @link       https://github.com/nik-web/base-application
+ * @version    1.0.0
+ * @since      1.0.0
+ */
+
+return [
+    'modules'                 => [
+    ],
+    'module_listener_options' => [
+        'config_glob_paths'        => [realpath(__DIR__) . '/autoload/{,*.}{global,local}-development.php'],
+        'config_cache_enabled'     => false,
+        'module_map_cache_enabled' => false,
+    ],
+];

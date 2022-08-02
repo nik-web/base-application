@@ -1,0 +1,66 @@
+<?php
+
+/**
+ * This file is part of base application with Laminas MVC framework
+ * 
+ * This is the home template (application/index/index) of this web application
+ * 
+ * @package    Application
+ * @author     Niklaus Höpfner <editor@nik-web.net>
+ * @copyright  Copyright (c) Niklaus Höpfner
+ * @link       https://github.com/nik-web/base-application
+ * @license    https://opensource.org/licenses/BSD-3-Clause The BSD-3-Clause License
+ * @version    1.0.0
+ * @since      1.0.0
+ */
+
+$this->headTitle('Das ist die Startseite unserer Webanwendung');
+$description = 'Das ist die Meta-Beschreibung der Startseite dieser Webanwendung';
+$keywords = 'Webanwendung, Startseite,';
+$this->headMeta()->appendName('description', $description)
+    ->appendName('keywords', $keywords);
+?>
+<header id="main-header">
+    <h1>
+        Startseite
+    </h1>
+    <p class="main-header-p">
+        Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, 
+        eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus.
+    </p>
+</header>
+<section>
+    <header>
+        <h2>
+            Das ist eine h2 in Section
+        </h2>
+    </header>
+    <p>
+        Lorem ipsum dolor <strong>Das ist Strong </strong>sit amet,
+        consectetuer adipiscing elit. Aenean commodo 
+        ligula <a href="#" title="Das ist ein Textlink">Das ist ein Textlink</a>
+    </p>
+    <p>
+        Zweiter Absatz eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis 
+        parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec,
+    </p>
+</section>
+<section>
+    <h2>
+        h2 Überschrift
+    </h2>
+    <p>
+        Langer Absatz <strong>Das ist mit Strong hervorgehoben </strong>sit amet,
+        consectetuer adipiscing elit. Aenean commodo 
+        ligula <a href="#" title="Das ist ein Textlink">Das ist ein Textlink</a> 
+        eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis 
+        parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec,
+        pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec 
+        pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, 
+        rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede 
+        mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. 
+        Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, 
+        eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. 
+        Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet.
+    </p>
+</section>

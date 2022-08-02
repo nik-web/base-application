@@ -1,0 +1,43 @@
+<?php
+
+/**
+ * This file is part of base application with Laminas MVC framework
+ * 
+ * This file is a view partial script for the meta navigationbar.
+ * Use this partial with Laminas\View\Helper\Navigation\Menu.
+ * 
+ * @package    Application
+ * @author     Niklaus Höpfner <editor@nik-web.net>
+ * @copyright  Copyright (c) Niklaus Höpfner
+ * @link       https://github.com/nik-web/base-application
+ * @license    https://opensource.org/licenses/BSD-3-Clause The BSD-3-Clause License
+ * @version    1.0.0
+ * @since      1.0.0
+ */
+?>
+<ul id="meta-nav-bar">
+<?php
+    foreach ($container as $page) {
+        if (!$this->navigation('Laminas\Navigation\Meta')->accept($page)) {
+            continue; 
+        }
+        if ($page->isActive()) {
+?>
+    <li class="meta-nav-item-current">
+        <strong class="meta-nav-current">
+            <?= $page ?>
+        </strong>
+    </li>
+    <?php
+        } else {
+    ?>
+    <li class="meta-nav-item">
+        <a class="meta-nav-link" href="<?= $page->getHref() ?>">
+            <?= $page ?>
+        </a>
+    </li>
+<?php
+        }
+    }
+?>
+</ul>
