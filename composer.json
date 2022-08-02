@@ -1,0 +1,32 @@
+{
+    "name": "nik-web/base-application",
+    "description": "A base application with laminas-mvc framework for de_DE location.",
+    "type": "project",
+    "license": "BSD-3-Clause",
+    "authors": [
+        {
+            "name": "Niklaus Höpfner",
+            "email": "editor@nik-web.net"
+        }
+    ],
+    "require-dev": {
+        "laminas/laminas-component-installer": "^2.5",
+        "laminas/laminas-test": "^4.0",
+        "phpunit/phpunit": "^9.5"
+    },
+    "require": {
+        "laminas/laminas-development-mode": "^3.6",
+        "laminas/laminas-mvc": "^3.3",
+        "laminas/laminas-navigation": "^2.13"
+    },
+    "autoload": {
+        "psr-4": {
+            "Application\\": "module/Application/src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "ApplicationTest\\": "module/Application/test/"
+        }
+    }
+}
