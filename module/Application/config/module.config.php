@@ -87,7 +87,8 @@ return [
             'application/privacy-policy/index' => __DIR__ . '/../view/application/privacy-policy/index.phtml',
             'application/imprint/index'        => __DIR__ . '/../view/application/imprint/index.phtml',
             'partial/nav-bar/brand'            => __DIR__ . '/../view/partial/nav-bar/brand.phtml',
-            'partial/nav-bar/main'            => __DIR__ . '/../view/partial/nav-bar/main.phtml',
+            'partial/nav-bar/main'             => __DIR__ . '/../view/partial/nav-bar/main.phtml',
+            'partial/nav-bar/meta'             => __DIR__ . '/../view/partial/nav-bar/meta.phtml',
         ],
         'template_path_stack' => [
             __DIR__ . '/../view',

@@ -3,3 +3,4 @@ data/cache/*
 !data/cache/.gitkeep
 nbproject/
 .phpunit.result.cache
+.sass-cache
