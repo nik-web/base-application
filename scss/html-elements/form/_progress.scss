@@ -1,0 +1,19 @@
+//
+// HTML <progress> element displays an indicator showing the completion
+// progress of a task, typically displayed as a progress bar.
+//
+// https://www.w3.org/TR/2012/WD-html-markup-20121025/progress.html
+// https://developer.mozilla.org/en-US/docs/Web/HTML/Element/progress
+//
+// Default CSS Settings: None.
+//
+// Enable default false
+//
+// Created on : 21.01.2019, 12:33:30
+// Author     : nik
+
+@if $enable-html-elements-progress {
+    progress {
+        @include set-box-sizing-border-box;
+    }
+}

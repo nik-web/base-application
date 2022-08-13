@@ -1,0 +1,28 @@
+//
+// HTML <dd> element defines a discription in a description list.
+//
+// The HTML <dd> element provides the details about or the definition of the
+// preceding term (<dt>) in a description list (<dl>).
+//
+// https://developer.mozilla.org/en-US/docs/Web/HTML/Element/dd
+//
+// Most browsers will display the <dd> element with the following default values:
+//
+// display: block;
+// margin-left: 40px;
+//
+// Enable default false
+//
+// Created on : 22.01.2019, 07:34:15
+// Author     : nik
+
+@if $enable-html-elements-dd {
+    dd {
+        display: list-item; // By Nik
+        padding: 0.5rem 0 0 0;
+        @include set-box-sizing-border-box;
+        margin: 0 0 0 1.25rem; // By Nik responsiv first
+        list-style-type: disc;
+        list-style-position: outside;
+    }
+}

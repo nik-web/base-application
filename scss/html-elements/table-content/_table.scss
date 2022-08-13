@@ -1,0 +1,26 @@
+//
+// HTML <table> element represents tabular data — that is, information presented 
+// in a two-dimensional table comprised of rows and columns of cells containing data.
+//
+// https://developer.mozilla.org/en-US/docs/Web/HTML/Element/table
+//
+// Most browsers will display the <table> element with the following default values:
+// display: table;
+// border-collapse: separate;
+// border-spacing: 2px;
+// border-color: gray;
+//
+// Enable default false
+//
+// Created on : 22.01.2019, 06:23:09
+// Author     : nik
+
+@if $enable-html-elements-table {
+    table {
+        display: table;
+        border-collapse: separate;
+        border-spacing: 2px;
+        border-color: gray;
+        @include set-box-sizing-border-box;
+    }
+}

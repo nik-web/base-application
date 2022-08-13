@@ -1,0 +1,27 @@
+//
+// HTML <blockquote> Element (or HTML Block Quotation Element) indicates that 
+// the enclosed text is an extended quotation.
+//
+// The HTML <blockquote> element specifies a section that is quoted from another source.
+//
+// https://developer.mozilla.org/en-US/docs/Web/HTML/Element/blockquote
+// https://www.w3schools.com/tags/tag_blockquote.asp
+//
+// Most browsers will display the <blockquote> element with the following default values:
+//
+// display: block;
+// margin-top: 1em;
+// margin-bottom: 1em;
+// margin-left: 40px;
+// margin-right: 40px;
+//
+// Enable default false
+//
+// Created on : 22.01.2019, 07:24:18
+// Author     : nik
+
+@if $enable-html-elements-blockquote {
+    blockquote {
+        @include set-box-sizing-border-box;
+    }
+}

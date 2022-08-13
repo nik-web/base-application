@@ -1,0 +1,18 @@
+//
+// HTML <track> element is used as a child of the media elements <audio> and <video>.
+//
+// https://www.w3.org/TR/2012/WD-html-markup-20121025/track.html
+// https://developer.mozilla.org/en-US/docs/Web/HTML/Element/track
+//
+// Default CSS Settings: None.
+//
+// Enable default false
+//
+// Created on : 21.01.2019, 12:50:25
+// Author     : nik
+
+@if $enable-html-elements-track {
+    track {
+        @include set-box-sizing-border-box;
+    }
+}

@@ -1,0 +1,26 @@
+//
+// HTML <object> element represents an external resource.
+//
+// https://www.w3.org/TR/2012/WD-html-markup-20121025/object.html
+// https://developer.mozilla.org/en-US/docs/Web/HTML/Element/object
+//
+// Enable default false
+//
+// Created on : 23.01.2019, 08:59:54
+// Author     : nik
+
+@if $enable-html-elements-object {
+    /*
+    The <object> html element
+    */
+    object {
+        @include set-box-sizing-border-box;
+    }
+    
+    // Most browsers will display the <object> element with the following
+    // default values:
+    object:focus {
+        outline: none;
+    }
+
+}

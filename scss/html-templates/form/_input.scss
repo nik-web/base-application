@@ -1,0 +1,70 @@
+//
+// HTML input element in templates of this aplication
+//
+// Created on : 21.04.2020, 13:55:55
+// Author     : nik
+
+@if $enable-html-elements-input {
+    
+    @if $enable-html-elements-input-submit {
+        .submit-success {
+            color: $button-success-color;
+            background-color: $button-success-bg;
+            border-color: $button-success-border-color;
+        }
+
+        .submit-success:hover {
+            background-color: $button-success-bg-hover;
+            text-decoration: none;
+        }
+        
+        .submit-danger {
+            color: $button-danger-color;
+            background-color: $button-danger-bg;
+            border-color: $button-danger-border-color;
+        }
+
+        .submit-danger:hover {
+            background-color: $button-danger-bg-hover;
+        }
+
+        .submit-primary {
+            color: $button-primary-color;
+            background-color: $button-primary-bg;
+            border-color: $button-primary-border-color;
+        }
+
+        .submit-primary:hover {
+            background-color: $button-primary-bg-hover;
+        }
+    }
+    
+    .not-valid-input {
+        background: seashell;
+        border-color: red;
+    }
+}
+@if $enable-html-elements-pre and $enable-captcha-figlet {
+    #registration-captcha,
+    #contact-captcha {
+        max-width: 340px;
+        text-align: center;
+        letter-spacing: 1rem;
+    }
+}
+
+#street {
+    width: 75%;
+}
+
+#house-number {
+    width: 20%;
+}
+
+#zip-code {
+    width: 30%;
+}
+
+#city {
+    width: 65%;
+}

@@ -1,0 +1,24 @@
+//
+// HTML <tr> element defines a row of cells in a table.
+//
+// https://developer.mozilla.org/en-US/docs/Web/HTML/Element/tr
+//
+// Most browsers will display the <tr> element with the following default values:
+//
+// display: table-row;
+// vertical-align: inherit;
+// border-color: inherit;
+//
+// Enable default false
+//
+// Created on : 22.01.2019, 06:37:50
+// Author     : nik
+
+@if $enable-html-elements-tr {
+    tr {
+        display: table-row;
+        border-color: inherit;
+        @include set-box-sizing-border-box;        
+        vertical-align: inherit;
+    }
+}

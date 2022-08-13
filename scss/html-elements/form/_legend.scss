@@ -1,0 +1,33 @@
+//
+// HTML <legend> element represents a caption for the content of its parent <fieldset>.
+//
+// https://www.w3.org/TR/2012/WD-html-markup-20121025/legend.html
+// https://developer.mozilla.org/en-US/docs/Web/HTML/Element/legend
+//
+// Most browsers will display the <legend> element with the following default values:
+//
+// display: block;
+// padding-left: 2px;
+// padding-right: 2px;
+// border: none;
+//
+// Enable default false
+//
+// Created on : 21.01.2019, 12:16:00
+// Author     : nik
+
+@if $enable-html-elements-legend {
+    /*
+    The <legend> html element
+    */
+    legend {
+        display: block;
+        padding: $very-small-distance $very-small-distance $small-distance $very-small-distance;
+        border: none;
+        @include set-box-sizing-border-box;
+        font-size: $third-heading-font-size;
+        font-weight: $headings-font-weight;
+        line-height: $headings-line-height;
+        color: $headings-color;
+    }
+}

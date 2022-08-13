@@ -1,0 +1,110 @@
+//
+// HTML <input> element is used to create interactive controls for web-based 
+// forms in order to accept data from the user.
+//
+// The input element is a multipurpose element for representing input controls.
+// https://www.w3.org/TR/2012/WD-html-markup-20121025/input.html
+// https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input
+//
+// Default CSS Settings: None.
+// Enable default false
+//
+// Created on : 21.01.2019, 12:19:57
+// Author     : nik
+
+@if $enable-html-elements-input {
+    /*
+    The <input> html element
+    */
+    input {
+        margin: 0;
+        outline: none;
+        border-width: 1px;
+        border-style: solid;
+        border-color: silver;
+        @include set-box-sizing-border-box;
+        padding: 1px 0;
+        color: $very-dark-gray;
+        background-color: $very-light-gray;
+        letter-spacing: normal;
+        word-spacing: normal;
+        text-transform: none;
+        text-indent: 0;
+        text-shadow: none;
+        text-align: start;
+        cursor: text;
+        font-size: $distance;
+        font-family: $primary-font-family;
+        font-style: $primary-font-style;
+        font-variant: $primary-font-variant;
+        font-weight: $secondary-font-weight;
+    }
+    
+    input:focus {
+        /* first need to set "outline" */
+        outline: $very-small-distance solid;
+        /* make the outline lightskyblue */
+        outline-color: lightskyblue;
+    }
+    
+    input::-moz-focus-inner {
+        border: 0;
+    }
+    
+}
+
+@if $enable-html-elements-input-for-text {
+    
+    input[type=datetime],
+    input[type=text],
+    input[type=search],
+    input[type=password],
+    input[type=tel],
+    input[type=url],
+    input[type=email],
+    input[type=file],
+    input[type=submit] {
+        display: block;
+        width: 100%;
+        padding: 0.175rem $small-distance;
+        border-radius: 0;
+        margin: 0.5rem auto 0.25rem auto;
+    }
+    
+    input[type=file] {
+        cursor: pointer;
+    }
+}
+
+@if $enable-html-elements-input-checkbox {
+    
+    input[type=checkbox] {
+        display: inline-block;
+        width: $distance;
+        height: $distance;
+        cursor: pointer;
+    }
+    
+}
+
+@if $enable-html-elements-input-submit == true {
+    
+    input[type=submit] {
+        min-width: 300px;
+        max-width: 400px;
+        padding: 0.375rem 0;
+        margin: $large-distance auto $smaller-distance auto;
+        text-align: center;
+        white-space: nowrap;
+        cursor: pointer;
+    }
+    
+}
+
+@if $enable-html-elements-input-radio == true {
+    input[type="radio"] {
+        margin-right: $smaller-distance;
+        cursor: pointer;
+        //outline: 1px solid #ced4da;
+    }
+}

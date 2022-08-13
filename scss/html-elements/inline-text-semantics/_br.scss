@@ -1,0 +1,22 @@
+//
+// HTML <br> element produces a line break in text (carriage-return).
+//
+// The HTML <br> element produces a line break in text (carriage-return). It is
+// useful for writing a poem or an address, where the division of lines is significant.
+// https://developer.mozilla.org/en-US/docs/Web/HTML/Element/br
+// The <br> element has a single, well-defined purpose — to create a line break
+// in a block of text. As such, it has no dimensions or visual output of its own,
+// and there is very little you can do to style it.
+//
+// Default CSS Settings: None.
+//
+// Enable default false
+//
+// Created on : 22.01.2019, 10:56:53
+// Author     : nik
+
+@if $enable-html-elements-br {
+    br {
+        @include set-box-sizing-border-box;
+    }
+}

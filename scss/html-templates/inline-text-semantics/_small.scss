@@ -1,0 +1,19 @@
+//
+// HTML small element in templates of this aplication
+//
+// Created on : 05.04.2020, 11:24:20
+// Author     : nik
+
+@if $enable-html-elements-small {
+    @if $enable-copyright-notice {
+        /*
+        Site provider copyright notice
+        */
+        #copyright-notice {
+            display: block;
+            padding-top: $distance;
+            text-align: center;
+            font-size: $font-size-smaller; // by nik
+        }
+    }
+}

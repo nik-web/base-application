@@ -1,0 +1,18 @@
+//
+// Add content sectioning html-elements 
+//
+// https://developer.mozilla.org/en-US/docs/Web/HTML/Element#Content_sectioning
+//
+// Created on : 27.02.2020, 11:11:32
+// Author     : nik
+
+@import 'content-sectioning/header',
+        'content-sectioning/nav',
+        'content-sectioning/main',
+        'content-sectioning/aside',
+        'content-sectioning/footer',
+        'content-sectioning/section',
+        'content-sectioning/article',
+        'content-sectioning/address',
+        'content-sectioning/hgroup',
+        'content-sectioning/headings';

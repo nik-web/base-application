@@ -1,0 +1,68 @@
+// Colors in CSS can be specified by the following methods:
+//
+// Hexadecimal colors
+// RGB colors
+// RGBA colors
+// HSL colors
+// HSLA colors
+// Predefined/Cross-browser color names
+//
+// https://www.w3.org/wiki/CSS/Properties/color/keywords
+// 
+//
+// Created on : 26.02.2020, 13:43:08
+// Author     : nik
+
+// Hexadecimal Colors
+// Gray scheme from white to black
+$white: #fff;
+$very-light-gray: #f5f5f5;
+$light-gray: #e9ecef;
+$medium-gray: #7f7f7f;
+$dark-gray: #393939;
+$very-dark-gray: #212529; // Is not a gray
+$black: #000;
+$silver: #c0c0c0;
+
+//  Blue colors
+$blue: #00f; // www.w3.org
+$darkblue: #00008b; // www.w3.org
+
+$medium-dark-cyan-blue: #31708f; // By nik-web
+
+$link-blue: #2070bb; // By nik-web
+
+// Brown colors
+$brown: #a52a2a; // www.w3.org
+$medium-dark-brown: #8a6d3b; // By nik-web
+
+// Cyan colors
+$cyan: #0ff; // www.w3.org
+$light-cyan: #bcdff1; // By nik-web
+$very-light-cyan: #d9edf7;
+
+// Green colors
+$green: #008000; // www.w3.org
+$medium-dark-green: #3c763d; // By nik-web
+$medium-dark-shade-of-green: #28a745; // By nik-web
+$light-green: #d0e9c6; // By nik-web
+$very-light-green: #dff0d8; // By nik-web
+$very-light-shade-of-green: #dff0d8; // By nik-web
+$dark-shade-of-green: #067f22; // By nik-web
+
+// Red colors
+$red: #f00; // www.w3.org
+
+$shade-of-red: #a94442; // By nik-web
+$light-shade-of-red: #ebcccc; // By nik-web
+$very-light-shade-of-red: #f2dede; // By nik-web
+
+// Purple colors
+$purple: #800080;
+
+// Yellow colors
+$yellow: #ff0; // www.w3.org
+$light-yellow: #faf2cc; // By nik-web
+$very-light-yellow: #fcf8e3; // By nik-web
+
+//$blue: #4285f4;

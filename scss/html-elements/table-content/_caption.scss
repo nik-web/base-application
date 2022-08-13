@@ -1,0 +1,21 @@
+//
+// HTML <caption> element specifies the caption (or title) of a table.
+//
+// https://developer.mozilla.org/en-US/docs/Web/HTML/Element/caption
+//
+// Most browsers will display the <caption> element with the following default values:
+// display: table-caption;
+// text-align: center;
+//
+// Enable default false
+//
+// Created on : 22.01.2019, 06:25:06
+// Author     : nik
+
+@if $enable-html-elements-caption {
+    caption {
+        display: table-caption;
+        @include set-box-sizing-border-box;
+        text-align: center;
+    }
+}

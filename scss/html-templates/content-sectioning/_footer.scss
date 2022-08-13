@@ -1,0 +1,18 @@
+//
+// HTML footer element in templates of the base aplication
+//
+// Created on : 28.02.2020, 16:32:03
+// Author     : nik
+
+@if $enable-html-elements-footer {
+    @if $enable-site-footer {
+    /**
+    Layout segment site footer
+    **/
+        #site-footer {
+            padding: $distance 0 $distance 0;
+            color: $tertiary-bg-color;
+            background-color: $site-footer-bg-color;
+        }
+    }
+}

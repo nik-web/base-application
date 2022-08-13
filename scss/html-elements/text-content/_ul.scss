@@ -1,0 +1,44 @@
+//
+// HTML <ul> element (unordered, bulleted list)
+//
+// The HTML <ul> element represents an unordered list of items, typically
+// rendered as a bulleted list.
+//
+// https://www.w3.org/TR/2012/WD-html-markup-20121025/ul.html
+// https://developer.mozilla.org/en-US/docs/Web/HTML/Element/ul
+//
+// Most browsers will display the <ul> element with the following default values:
+//
+// display: block;
+// list-style-type: disc;
+// margin-top: 1em;
+// margin-bottom: 1em;
+// margin-left: 0;
+// margin-right: 0;
+// padding-left: 40px;
+//
+// 1. By nik
+// 2. Change from `box-sizing: content-box` so that `width` is not affected
+// 3. Default CSS values (default W3C)
+//
+// Enable default false
+//
+// Created on : 22.01.2019, 07:27:17
+// Updated on : 11.02.2019, 11:54
+// Author     : nik
+
+@if $enable-html-elements-ul {
+    ul {
+        display: block; // 3
+        //padding: 0 0 0 $max-distance; // 1
+        padding: $small-distance 0 $very-small-distance $max-distance; // 1
+        border: 0; // 1
+        @include set-box-sizing-border-box; // 2
+        margin: 0; // 1
+        list-style-type: disc; // 3
+    }
+    
+    ul ul {
+        list-style-type: circle; // 1
+    }
+}

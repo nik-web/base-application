@@ -1,0 +1,17 @@
+//
+// HTML <p> element in templates of this aplication
+//
+// Created on : 06.04.2020, 10:27:05
+// Author     : nik
+
+@if $enable-html-elements-p {
+    @if $enable-main-header-p {
+        /**
+        Content main header paragraph <p> html element
+        */
+        .main-header-p {
+            font-size: 1.05rem;
+            font-style: italic;
+        }
+    }
+}

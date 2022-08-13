@@ -1,0 +1,22 @@
+//
+// HTML <sup> element specifies inline text which is to be displayed as 
+// superscript for solely typographical reasons.
+//
+// https://developer.mozilla.org/en-US/docs/Web/HTML/Element/sup
+//
+// Most browsers will display the <sup> element with the following default values:
+// vertical-align: super;
+// font-size: smaller;
+//
+// Enable default false
+//
+// Created on : 22.01.2019, 11:51:34
+// Author     : nik
+
+@if $enable-html-elements-sup {
+    sup {
+        @include set-box-sizing-border-box;
+        vertical-align: super;
+        font-size: smaller;
+    }
+}

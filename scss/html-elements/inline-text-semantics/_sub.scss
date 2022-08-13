@@ -1,0 +1,22 @@
+//
+// HTML <sub> element specifies inline text which should be displayed as subscript 
+// for solely typographical reasons.
+//
+// https://developer.mozilla.org/en-US/docs/Web/HTML/Element/sub
+//
+// Most browsers will display the <sub> element with the following default values:
+// vertical-align: sub;
+// font-size: smaller;
+//
+// Enable default false
+//
+// Created on : 22.01.2019, 11:51:21
+// Author     : nik
+
+@if $enable-html-elements-sub {
+    sub {
+        @include set-box-sizing-border-box;
+        vertical-align: sub;
+        font-size: smaller;
+    }
+}

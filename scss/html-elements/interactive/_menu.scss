@@ -1,0 +1,30 @@
+//
+// HTML <menu> element
+//
+// The HTML <menu> element represents a group of commands that a user can
+// perform or activate.
+// https://developer.mozilla.org/en-US/docs/Web/HTML/Element/menu
+//
+// Most browsers will display the <menu> element with the following default values:
+// display: block;
+// list-style-type: disc;
+// margin-top: 1em;
+// margin-bottom: 1em;
+// margin-left: 0;
+// margin-right: 0;
+// padding-left: 40px;
+//
+// Poor browser compatibility!!!
+//
+// Enable default false
+//
+// experimental technology
+//
+// Created on : 21.01.2019, 13:03:41
+// Author     : nik
+
+@if $enable-html-elements-menu == true {
+    menue {
+        @include set-box-sizing-border-box;
+    }
+}

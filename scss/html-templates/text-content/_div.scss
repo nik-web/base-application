@@ -1,0 +1,30 @@
+//
+// HTML div element in templates of this aplication
+//
+// Created on : 28.02.2020, 12:45:35
+// Author     : nik
+
+@if $enable-html-elements-div {
+    @if $enable-create-sticky-footer {
+    /*
+    This ID for main wrapper to create a sticky footer.
+    */
+        #create-sticky-footer {
+            flex: 1;
+        }
+    }
+    
+    @if $enable-site-width-container {
+    /*
+    Container with fluid width and max. width
+    */
+        .site-width-container {
+            position: relative; // for buttons
+            width: $site-content-width;
+            max-width: $site-content-max-width;
+            height: auto;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+}

@@ -1,0 +1,22 @@
+//
+// HTML <dfn> element
+//
+// The HTML Definition element (<dfn>) is used to indicate the term being defined
+// within the context of a definition phrase or sentence. The <p> element,
+// the <dt>/<dd> pairing, or the <section> element which is the nearest ancestor
+// of the <dfn> is considered to be the definition of the term.
+//
+// Most browsers will display the <dfn> element with the following default values:
+// font-style: italic;
+//
+// Enable default false
+//
+// Created on : 22.01.2019, 11:00:21
+// Author     : nik
+
+@if $enable-html-elements-dfn {
+    dfn {
+        @include set-box-sizing-border-box;
+        font-style: normal;
+    }
+}

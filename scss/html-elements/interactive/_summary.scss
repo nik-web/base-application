@@ -1,0 +1,24 @@
+//
+// HTML <summary> element
+//
+// The HTML Disclosure Summary element (<summary>) element specifies a summary, 
+// caption, or legend for a <details> element's disclosure box. Clicking the 
+// <summary> element toggles the state of the parent <details> element open and closed.
+// https://developer.mozilla.org/en-US/docs/Web/HTML/Element/summary
+//
+// Most browsers will display the <summary> element with the following default values:
+// display: block;
+//
+// Poor browser compatibility!!!
+//
+// Enable default false
+//
+// Created on : 21.01.2019, 13:01:54
+// Author     : nik
+
+@if $enable-html-elements-summary {
+    summary {
+        display: block;
+        @include set-box-sizing-border-box;
+    }
+}

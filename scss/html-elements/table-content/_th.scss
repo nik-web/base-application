@@ -1,0 +1,28 @@
+//
+// HTML <th> element defines a cell as header of a group of table cells.
+//
+// The exact nature of this group is defined by the scope and headers attributes.
+//
+// https://developer.mozilla.org/en-US/docs/Web/HTML/Element/th
+//
+// Most browsers will display the <th> element with the following default values:
+//
+// display: table-cell;
+// vertical-align: inherit;
+// font-weight: bold;
+// text-align: center;
+//
+// Enable default false
+//
+// Created on : 22.01.2019, 06:42:00
+// Author     : nik
+
+@if $enable-html-elements-th {
+    th {
+        display: table-cell;
+        @include set-box-sizing-border-box;
+        vertical-align: inherit;
+        font-weight: bold;
+        text-align: center;
+    }
+}

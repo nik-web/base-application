@@ -1,0 +1,25 @@
+//
+// HTML <thead> element defines a set of rows defining the head of the columns 
+// of the table.
+//
+// https://developer.mozilla.org/en-US/docs/Web/HTML/Element/thead
+//
+// Most browsers will display the <thead> element with the following default values: 
+//
+// display: table-header-group;
+// vertical-align: middle;
+// border-color: inherit;
+//
+// Enable default false
+//
+// Created on : 22.01.2019, 06:35:38
+// Author     : nik
+
+@if $enable-html-elements-thead {
+    thead {
+        display: table-header-group;
+        border-color: inherit;
+        @include set-box-sizing-border-box;        
+        vertical-align: middle;
+    }
+}

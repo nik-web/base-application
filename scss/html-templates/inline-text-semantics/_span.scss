@@ -1,0 +1,48 @@
+//
+// HTML span element in templates of this aplication
+//
+// Created on : 10.03.2020, 13:28:01
+// Author     : nik
+
+@if $enable-html-elements-span {
+    @if $enable-nav-bar-main {
+    /**
+    Hamburg button for main nav <span> element
+    */
+        .hamburg-line {
+            display: block;
+            position: absolute;
+            left: 9px;
+            z-index: 1000;
+            height: 2px;
+            width: 20px;
+            background: $tertiary-bg-color;
+            border-radius: 3px;
+            transition: 0.5s;
+            transform-origin: center;
+        }
+
+        .hamburg-line:nth-child(1) {
+            top: 5px;
+        }
+
+        .hamburg-line:nth-child(2) {
+            top: 11px;
+        }
+
+        .hamburg-line:nth-child(3) {
+            top: 17px;
+        }
+
+        .open-hamburg .hamburg-line:nth-child(1) {
+            transform: translateY(6px) rotate(-45deg);
+        }
+
+        .open-hamburg .hamburg-line:nth-child(2) {
+            display: none;
+        }
+        .open-hamburg .hamburg-line:nth-child(3) {
+            transform: translateY(-6px) rotate(45deg);
+        }
+    }
+}

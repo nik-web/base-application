@@ -1,0 +1,22 @@
+//
+// HTML <em> element
+//
+// The HTML <em> element marks text that has stress emphasis. The <em> element
+// can be nested, with each level of nesting indicating a greater degree of emphasis.
+//
+// https://developer.mozilla.org/en-US/docs/Web/HTML/Element/em
+//
+// Most browsers will display the <em> element with the following default values:
+// font-style: italic;
+//
+// Enable default false
+//
+// Created on : 22.01.2019, 11:00:54
+// Author     : nik
+
+@if $enable-html-elements-em {
+    em {
+        @include set-box-sizing-border-box;
+        font-style: italic;
+    }
+}

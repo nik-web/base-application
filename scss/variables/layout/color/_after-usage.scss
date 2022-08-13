@@ -1,0 +1,107 @@
+//
+// Colors after use
+//
+// Created on : 26.02.2020, 14:04:18
+// Author     : nik
+
+// Sectioning root
+$body-bg-color: $primary-bg-color;
+$body-color: $primary-color;
+
+// Headers
+// Site header
+$site-header-bg-color: $tertiary-bg-color;
+$site-header-color: $tertiary-color;
+// Main header
+$main-header-bg-color: $quaternary-bg-color;
+
+// Site nav
+$site-nav-bg-color: $secondary-bg-color;
+$site-nav-color: $secondary-color;
+
+// Site footer
+$site-footer-bg-color: $secondary-bg-color;
+$site-footer-color: $secondary-color;
+
+// Site headings
+$headings-color: $quaternary-color;
+
+// Site buttons
+$buttons-border-color: $silver;
+
+// Inline text semantics elements
+// default strong
+$strong-color: $primary-higlight-color;
+
+// Default link colors
+$link-color: $link-blue;
+$link-visited-color: $purple;
+$link-hover-color: $darkblue;
+$link-active-color: $red;
+
+// Partial nav-bar brand
+$brand-color: $primary-higlight-color;
+
+// Partial nav-bar sing-in-out
+$nav-bar-sing-color: $dark-gray;
+$nav-bar-sing-hover-color: $white;
+
+// Partial nav-bar meta
+$nav-bar-meta-current-bg-color: $light-gray;
+$nav-bar-meta-color: $light-gray;
+//$nav-bar-meta-color: $medium-gray;
+$nav-bar-meta-hover-color: $white;
+$nav-bar-meta-border-color: silver;
+
+// Partial nav-bar main
+$nav-bar-main-bg-color: $secondary-bg-color;
+$nav-bar-main-color: $secondary-color;
+$nav-bar-main-current-bg-color: $light-gray;
+$nav-bar-main-current-color: $secondary-higlight-color;
+$nav-bar-main-hover-color: $secondary-higlight-color;
+$nav-bar-main-border-color: silver;
+
+
+// Buttons, input type submits and link buttons
+// Success
+$button-success-color: $white;
+$button-success-bg: $medium-dark-shade-of-green;
+$button-success-border-color: $very-light-shade-of-green;
+$button-success-bg-hover: $dark-shade-of-green;
+// Primary
+$button-primary-color: $white;
+$button-primary-bg: #007bff;
+$button-primary-border-color: #d9edf7;
+$button-primary-bg-hover: #015bbc;
+// Danger
+$button-danger-color: $white;
+$button-danger-bg: #dc3545;
+$button-danger-border-color: #f2dede;
+$button-danger-bg-hover: #b71222;
+// Search
+/*
+$button-search-color: $white;
+$button-search-bg: $medium-dark-shade-of-green;
+$button-search-border-color: $very-light-shade-of-green;
+$button-search-bg-hover: $dark-shade-of-green;
+*/
+
+// Alert (layout segment) "messages"
+$alert-success-color: $medium-dark-green;
+$alert-success-border-color: $light-green;
+$alert-success-bg: $very-light-green;
+
+$alert-info-color: $medium-dark-cyan-blue;
+$alert-info-border-color: $light-cyan;
+$alert-info-bg: $very-light-cyan;
+
+$alert-warning-color: $medium-dark-brown;
+$alert-warning-border-color: $light-yellow;
+$alert-warning-bg: $very-light-yellow;
+
+$alert-danger-color: $shade-of-red;
+$alert-danger-border-color: $light-shade-of-red;
+$alert-danger-bg: $very-light-shade-of-red;
+
+$alert-default-bg: $very-light-gray;
+$alert-default-border-color: $light-gray;

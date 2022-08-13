@@ -1,0 +1,52 @@
+//
+// HTML <body> element
+//
+// The <body> element represents the body of a document (as opposed to the document’s metadata).
+// https://www.w3.org/TR/2012/WD-html-markup-20121025/body.html#body
+// https://developer.mozilla.org/en-US/docs/Web/HTML/Element/body
+// 
+// Default css values
+// https://www.w3schools.com/cssref/css_default_values.asp
+// display: block
+// margin: 8px;
+// body:focus 	outline: none;
+//
+// 1. Change from `box-sizing: content-box` so that `width` is not affected by
+// `padding` or `border`.
+// 
+// 2. Layout with responsive sticky footer
+//
+// 3. Set the primary properties for the font
+//
+// Enable default truhe
+//
+// Created on : 26.02.2020, 11:44:11
+// Author     : nik
+
+/*
+The <body> html element
+*/
+body {
+    display: flex; // 2
+    flex-direction: column; // 2
+    margin: 0;
+    border: 0;
+    padding: 0;
+    width: 100%;
+    min-height: 100%; // 2
+    @include set-box-sizing-border-box; // 1
+    color: $body-color;
+    background-color: $body-bg-color;
+    font-family: $primary-font-family; // 3
+    font-style: $primary-font-style; // 3
+    font-variant: $primary-font-variant; // 3
+    font-weight: $primary-font-weight; // 3
+    line-height: $primary-line-height; // 3
+    word-spacing: $primary-word-spacing; // 3
+    letter-spacing: $primary-letter-spacing; // 3
+    text-align: left;
+}
+
+body:focus {
+    outline: none;
+}

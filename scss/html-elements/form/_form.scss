@@ -1,0 +1,24 @@
+//
+// HTML <form> element represents a document section that contains
+// interactive controls for submitting information to a web server.
+//
+// https://www.w3.org/TR/2012/WD-html-markup-20121025/form.html
+// https://developer.mozilla.org/en-US/docs/Web/HTML/Element/form
+//
+// Enable default false
+//
+// Created on : 21.01.2019, 10:33:04
+// Author     : nik
+
+@if $enable-html-elements-form {
+    /*
+    The <form> html element
+    */
+    form {
+        display: block;
+        @include set-box-sizing-border-box;
+        margin: 0;
+        padding: $small-distance $small-distance $very-small-distance $small-distance; // by Nik
+        vertical-align: baseline; // by Nik
+    }
+}

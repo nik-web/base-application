@@ -1,0 +1,20 @@
+//
+// HTML <del> element represents a range of text that has been deleted from a document. 
+//
+// https://www.w3.org/TR/2012/WD-html-markup-20121025/del.html
+// https://developer.mozilla.org/en-US/docs/Web/HTML/Element/del
+//
+// Enable default false
+//
+// Created on : 21.01.2019, 09:00:01
+// Author     : nik
+
+@if $enable-html-elements-del {
+    /*
+    The <del> html element
+    */
+    del {
+        text-decoration: line-through;
+        @include set-box-sizing-border-box;
+    }
+}

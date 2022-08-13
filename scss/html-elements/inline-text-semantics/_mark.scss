@@ -1,0 +1,22 @@
+//
+// HTML <mark> element
+//
+// The HTML Mark Text element (<mark>) represents text which is marked or
+// highlighted for reference or notation purposes, due to the marked passage's
+// relevance or importance in the enclosing context.
+// https://developer.mozilla.org/en-US/docs/Web/HTML/Element/mark
+//
+// Most browsers will display the <mark> element with the following default values:
+// background-color: yellow;
+// color: black;
+//
+// Enable default false
+//
+// Created on : 22.01.2019, 11:37:38
+// Author     : nik
+
+@if $enable-html-elements-mark {
+    mark {
+        @include set-box-sizing-border-box;
+    }
+}

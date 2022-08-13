@@ -1,0 +1,20 @@
+//
+// HTML <b> element bring attention to html element
+//
+// https://developer.mozilla.org/en-US/docs/Web/HTML/Element/b
+// 
+// Most browsers will display the <b> element with the following default values:
+// font-weight: bold;
+//
+// Enable default false
+//
+// Created on : 22.01.2019, 10:54:54
+// Author     : nik
+
+@if $enable-html-elements-b {
+    b {
+        @include set-box-sizing-border-box;
+        color: $primary-higlight-color;
+        font-weight: $primary-higlight-font-weight;
+    }
+}

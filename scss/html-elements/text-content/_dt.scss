@@ -1,0 +1,23 @@
+//
+// HTML <dt> element specifies a term in a description or definition list.
+//
+// https://developer.mozilla.org/en-US/docs/Web/HTML/Element/dt
+//
+// Most browsers will display the <dt> element with the following default values:
+//
+// display: block;
+//
+// Enable default false
+//
+// Created on : 22.01.2019, 07:33:39
+// Author     : nik
+
+@if $enable-html-elements-dt {
+    dt {
+        display: block;
+        padding: $small-distance 0 0 0;
+        @include set-box-sizing-border-box;
+        color: $primary-higlight-color;
+        font-weight: $primary-higlight-font-weight;
+    }
+}

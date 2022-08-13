@@ -1,0 +1,24 @@
+//
+// HTML <tfoot> element defines a set of rows summarizing the columns of the table.
+//
+// https://developer.mozilla.org/en-US/docs/Web/HTML/Element/tfoot
+//
+// Most browsers will display the <tfoot> element with the following default values:
+//
+// display: table-footer-group;
+// vertical-align: middle;
+// border-color: inherit;
+//
+// Enable default false
+//
+// Created on : 22.01.2019, 06:37:20
+// Author     : nik
+
+@if $enable-html-elements-tfoot {
+    tfoot {
+        display: table-footer-group;
+        border-color: inherit;
+        @include set-box-sizing-border-box;
+        vertical-align: middle;
+    }
+}

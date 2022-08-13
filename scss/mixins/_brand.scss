@@ -1,0 +1,16 @@
+//
+// A mixin to define the site brand as link or strong
+//
+// Created on : 02.03.2020, 09:18:27
+// Author     : nik
+
+@mixin brand($is-a-link: true) {
+    display: inline-block;
+    font-size: $brand-font-size;
+    font-weight: $brand-font-weight;
+    font-family: $brand-font-family;
+    color: $brand-color;
+    @if $is-a-link == true {
+        text-decoration: none;
+    }
+}

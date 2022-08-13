@@ -1,0 +1,27 @@
+//
+// HTML <fieldset> element is used to group several controls as well as
+// labels (<label>) within a web form.
+//
+// https://www.w3.org/TR/2012/WD-html-markup-20121025/fieldset.html
+// https://developer.mozilla.org/en-US/docs/Web/HTML/Element/fieldset
+//
+// Enable default false
+//
+// Created on : 21.01.2019, 12:15:06
+// Author     : nik
+
+@if $enable-html-elements-fieldset {
+    /*
+    The <fieldset> html element
+    */
+    fieldset {
+        display: block;
+        margin: $distance 0 0 0;
+        border-width: 1px;
+        border-style: solid;
+        border-color: silver;
+        border-image: initial;
+        padding: $distance $distance $small-distance $distance;
+        @include set-box-sizing-border-box;
+    }
+}

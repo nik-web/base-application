@@ -1,0 +1,32 @@
+//
+// HTML <pre> element (preformatted text)
+//
+// The HTML <pre> element represents preformatted text which is to be presented 
+// exactly as written in the HTML file. The text is typically rendered using a 
+// non-proportional ("monospace") font. Whitespace inside this element is 
+// displayed as written.
+//
+// https://developer.mozilla.org/en-US/docs/Web/HTML/Element/pre
+// https://www.w3schools.com/tags/tag_pre.asp
+//
+// Most browsers will display the <pre> element with the following default values:
+//
+// display: block;
+// font-family: monospace;
+// white-space: pre;
+// margin: 1em 0;
+//
+// Enable default false
+//
+// Created on : 22.01.2019, 07:23:06
+// Author     : nik
+
+@if $enable-html-elements-pre {
+    pre {
+        display: block;
+        font-family: monospace;
+        white-space: pre;
+        margin: $distance 0;
+        @include set-box-sizing-border-box;
+    }
+}

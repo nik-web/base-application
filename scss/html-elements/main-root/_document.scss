@@ -1,0 +1,48 @@
+//
+// The document element
+//
+// The <html> element represents the root of a document.
+// https://www.w3.org/TR/2012/WD-html-markup-20121025/html.html#html
+//
+// Default css values
+// https://www.w3schools.com/cssref/css_default_values.asp
+//
+// https://github.com/necolas/normalize.css
+//
+//
+// display: block;
+// 1. Change from `box-sizing: content-box` so that `width` is not affected by
+// `padding` or `border`.
+// 2. Layout with responsive sticky footer
+// 3. Font size with calc()
+//
+// Created on : 23.02.2020, 09:28:56
+// Author     : nik
+
+/*
+The document element
+*/
+html {
+    display: block;
+    margin: 0;
+    border: 0;
+    @include set-box-sizing-border-box; // 1
+    padding: 0;
+    height: 100%; // 2
+    width: 100%;
+    font-size: $root-font-size; // old web browser
+    @include fluid-type($min-screen-width, $max-screen-width, $min-font-size, $max-font-size);// 3
+}
+
+html:focus {
+    outline: none;
+}
+
+//
+// IE10+ doesn't honor `<meta name="viewport">` in some cases.
+//
+@at-root {
+    @-ms-viewport {
+        width: device-width;
+    }
+}

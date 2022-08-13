@@ -1,0 +1,97 @@
+//
+// HTML li element in templates of this aplication
+//
+//    Created on : 03.03.2020, 11:13:04
+//    Author     : nik
+
+@if $enable-html-elements-ul {
+
+    @if $enable-nav-bar-meta {
+    /**
+    Partial nav-bar meta <li> element (list item)
+    */
+        .meta-nav-item,
+        .meta-nav-item-current {
+            display: block;
+            border-top: 1px solid $nav-bar-meta-border-color;
+            padding: $small-distance 0;
+            text-align: center;
+        }
+
+        .meta-nav-item-current {
+            background-color: $nav-bar-meta-current-bg-color;
+        }
+
+        #meta-nav-bar li:first-child {
+            border-top: none;
+        }
+
+        @media screen and (min-width: $meta-nav-breakpoint) {
+            .meta-nav-item,
+            .meta-nav-item-current {
+                border-top: none;
+                border-left: 1px solid $nav-bar-meta-border-color;
+                padding: $very-small-distance $small-distance;
+            }
+
+            .meta-nav-item-current {
+                background-color: inherit;
+            }
+
+            #meta-nav-bar li:first-child {
+                border-left: none;
+            }
+        }
+    }
+
+    @if $enable-nav-bar-main {
+    /**
+    Partial nav-bar main <li> element (list item)
+    */
+        .main-nav-item,
+        .main-nav-item-current,
+        .main-nav-item-dropdown,
+        .main-nav-dropdown-item,
+        .main-nav-dropdown-item-current {
+            display: block;
+            border-top: 1px solid $nav-bar-main-border-color;
+            padding: $small-distance 0;
+            text-align: center;
+        }
+
+        .main-nav-item-current,
+        .main-nav-dropdown-item-current {
+            background-color: $nav-bar-meta-current-bg-color;
+        }
+
+        .main-nav-bar-dropdown li:first-child {
+            border-top: none;
+        }
+
+        @media screen and (min-width: $main-nav-breakpoint) {
+
+            .main-nav-item,
+            .main-nav-item-dropdown,
+            .main-nav-item-current,
+            .main-nav-dropdown-item,
+            .main-nav-dropdown-item-current {
+                padding: $very-small-distance $small-distance;
+            }
+
+            .main-nav-item,
+            .main-nav-item-dropdown,
+            .main-nav-item-current {
+                border-top: none;
+                border-left: 1px solid $nav-bar-main-border-color;
+            }
+
+            .main-nav-item-dropdown {
+                position: relative;
+            }
+
+            #main-nav-bar li:first-child {
+                border-left: none;
+            }
+        }
+    }
+}

@@ -1,0 +1,27 @@
+//
+// HTML <embed> element
+//
+// The <embed> tag defines a container for an external application or
+// interactive content (a plug-in).
+//
+// https://www.w3.org/TR/2012/WD-html-markup-20121025/embed.html
+// https://developer.mozilla.org/en-US/docs/Web/HTML/Element/embed
+//
+// Enable default false
+//
+// Created on : 23.01.2019, 08:57:12
+// Author     : nik
+
+@if $enable-html-elements-embed {
+    /*
+    The <embed> html element
+    */
+    embed {
+        @include set-box-sizing-border-box;
+    }
+    
+    // Most browsers will display the <embed> element with the following default values:
+    embed:focus {
+        outline: none;
+    }
+}

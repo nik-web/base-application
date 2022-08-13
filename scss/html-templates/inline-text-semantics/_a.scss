@@ -1,0 +1,61 @@
+//
+// HTML a element in templates of this aplication
+//
+// Created on : 02.03.2020, 09:51:31
+// Author     : nik
+
+@if $enable-html-elements-a {
+    @if $enable-nav-bar-brand {
+    /**
+    Partial nav-bar brand <a> element
+    */
+        #brand,
+        #brand:link,
+        #brand:visited,
+        #brand:focus,
+        #brand:hover,
+        #brand:active {
+            @include brand;
+        }
+    }
+
+    @if $enable-nav-bar-meta {
+    /**
+    Partial nav-bar meta <a> element
+    */
+        .meta-nav-link,
+        .meta-nav-link:link,
+        .meta-nav-link:visited,
+        .meta-nav-link:hover,
+        .meta-nav-link:focus,
+        .meta-nav-link:active {
+            display: block;
+            color: $nav-bar-meta-color;
+            text-decoration: none;
+        }
+
+        .meta-nav-link:hover {
+            color: $nav-bar-meta-hover-color;
+        }
+    }
+
+    @if $enable-nav-bar-main {
+    /**
+    Partial nav-bar main <a> element
+    */
+        .main-nav-link,
+        .main-nav-link:link,
+        .main-nav-link:visited,
+        .main-nav-link:hover,
+        .main-nav-link:focus,
+        .main-nav-link:active {
+            display: block;
+            color: $nav-bar-main-color;
+            text-decoration: none;
+        }
+
+        .main-nav-link:hover {
+            color: $nav-bar-main-hover-color;
+        }
+    }
+}

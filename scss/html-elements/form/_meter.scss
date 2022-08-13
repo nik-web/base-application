@@ -1,0 +1,22 @@
+//
+// HTML <meter> element represents either a scalar value within a known
+// range or a fractional value.
+//
+// https://www.w3.org/TR/2012/WD-html-markup-20121025/meter.html
+// https://developer.mozilla.org/en-US/docs/Web/HTML/Element/meter
+//
+// Default CSS Settings: None.
+//
+// Enable default false
+//
+// Created on : 21.01.2019, 12:34:32
+// Author     : nik
+
+@if $enable-html-elements-meter {
+    /*
+    The <meter> html element
+    */
+    meter {
+        @include set-box-sizing-border-box;
+    }
+}

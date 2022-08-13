@@ -1,0 +1,21 @@
+//
+// HTML <area> element defines a hot-spot region on an image, and optionally 
+// associates it with a hypertext link. This element is used only within a 
+// <map> element.
+//
+// https://www.w3.org/TR/2012/WD-html-markup-20121025/area.html
+// https://developer.mozilla.org/en-US/docs/Web/HTML/Element/area
+//
+// Most browsers will display the <area> element with the following default values:
+// display: none;
+//
+// Enable default false
+//
+// Created on : 21.01.2019, 12:52:32
+// Author     : nik
+
+@if $enable-html-elements-area {
+    area {
+        display: none;
+    }
+}

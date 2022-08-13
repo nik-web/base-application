@@ -1,0 +1,22 @@
+//
+// HTML nav element  in templates of this aplication
+//
+// Created on : 28.02.2020, 14:36:43
+// Author     : nik
+
+@if $enable-html-elements-nav {
+    @if $enable-site-nav {
+    /*
+    Layout segment site nav html <nav> element
+    */
+        #site-nav {
+            position: -webkit-sticky;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            width: 100%;
+            background-color: $site-nav-bg-color;
+            color: $site-nav-color;
+        }
+    }
+}

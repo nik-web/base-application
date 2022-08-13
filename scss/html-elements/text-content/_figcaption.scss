@@ -1,0 +1,26 @@
+//
+// HTML <figcaption> element represents a caption or legend describing the rest 
+// of the contents of its parent <figure> element.
+//
+// The <figcaption> element can be placed as the first or last child of
+// the <figure> element.
+//
+// https://developer.mozilla.org/en-US/docs/Web/HTML/Element/figcaption
+//
+// Most browsers will display the <figcaption> element with the following default values:
+//
+// display: block;
+//
+// Enable default false
+//
+// Created on : 22.01.2019, 07:38:20
+// Author     : nik
+
+@if $enable-html-elements-figcaption {
+    figcaption {
+        display: block;
+        @include set-box-sizing-border-box;
+        padding: $small-distance;
+        font-size: 1rem;
+    }
+}

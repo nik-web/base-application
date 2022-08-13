@@ -1,0 +1,21 @@
+//
+// The HTML <datalist> element contains a set of <option> elements that represent
+// the values available for other controls.
+//
+// https://www.w3.org/TR/2012/WD-html-markup-20121025/datalist.html
+// https://developer.mozilla.org/en-US/docs/Web/HTML/Element/datalist
+//
+// Most browsers will display the <datalist> element with the following default values:
+//
+// display: none;
+//
+// Enable default false
+//
+// Created on : 21.01.2019, 12:26:19
+// Author     : nik
+
+@if $enable-html-elements-datalist {
+    datalist {
+        display: none;
+    }
+}

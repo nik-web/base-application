@@ -1,0 +1,40 @@
+//
+// HTML label element in templates of this aplication
+//
+// Created on : 18.04.2020, 13:09:46
+//  Author     : nik
+
+
+@if $enable-html-elements-label {
+    /*
+    The <label> html element for the <form> element, like <h2> element
+    */
+    .form-label {
+        display: block;
+        padding: $distance 0 $very-small-distance 0;
+        font-weight: $headings-font-weight;
+        line-height: $headings-line-height;
+        vertical-align: baseline;
+        color: $headings-color;
+        @include hyphens(auto);
+        font-size: $second-heading-font-size;
+    }
+    
+    .form-control-label,
+    .form-control-label-multiple {
+        padding: $distance 0 $very-small-distance 0;
+        font-weight: $headings-font-weight;
+        line-height: $headings-line-height;
+        vertical-align: baseline;
+        color: $headings-color;
+        font-size: $form-label-font-size;
+    }
+    
+    .form-control-label {
+        display: block;
+    }
+    
+    .form-control-label-multiple {
+        display: inline-block;
+    }
+}

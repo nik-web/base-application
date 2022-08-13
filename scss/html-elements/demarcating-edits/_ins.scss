@@ -1,0 +1,20 @@
+//
+// HTML <ins> element represents a range of text that has been added to a document.  
+//
+// https://www.w3.org/TR/2012/WD-html-markup-20121025/ins.html
+// https://developer.mozilla.org/en-US/docs/Web/HTML/Element/ins
+//
+// Enable default false
+//
+// Created on : 21.01.2019, 08:55:48
+// Author     : nik
+
+@if $enable-html-elements-ins {
+    /*
+    The <ins> html element
+    */
+    ins {
+        text-decoration: underline;
+        @include set-box-sizing-border-box;
+    }
+}

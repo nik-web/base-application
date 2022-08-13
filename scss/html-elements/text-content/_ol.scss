@@ -1,0 +1,26 @@
+//
+// HTmL <ol> element defines an ordered list of items.
+//
+// Then ordered list can be numerical or alphabetical.
+//
+// Most browsers will display the <ol> element with the following default values:
+//
+// display: block;
+// list-style-type: decimal;
+// margin-top: 1em;
+// margin-bottom: 1em;
+// margin-left: 0;
+// margin-right: 0;
+// padding-left: 40px;
+//
+// Enable default false
+//
+//Created on : 22.01.2019, 07:25:29
+//  Author     : nik
+
+@if $enable-html-elements-ol {
+    ol {
+        display: block;
+        @include set-box-sizing-border-box;
+    }
+}

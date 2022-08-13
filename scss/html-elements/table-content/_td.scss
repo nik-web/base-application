@@ -1,0 +1,22 @@
+//
+// HTML <td> element defines a cell of a table that contains data.
+//
+// https://developer.mozilla.org/en-US/docs/Web/HTML/Element/td
+//
+// Most browsers will display the <td> element with the following default values:
+// display: table-cell;
+// vertical-align: inherit;
+//
+// Enable default false
+//
+//
+// Created on : 22.01.2019, 06:39:17
+// Author     : nik
+
+@if $enable-html-elements-td {
+    td {
+        display: table-cell;
+        @include set-box-sizing-border-box;
+        vertical-align: inherit;
+    }
+}

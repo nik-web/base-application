@@ -1,0 +1,23 @@
+//
+// HTML <i> element
+//
+// The HTML <i> element represents a range of text that is set off from the
+// normal text for some reason. Some examples include technical terms, foreign
+// language phrases, or fictional character thoughts.
+//
+// https://developer.mozilla.org/en-US/docs/Web/HTML/Element/i
+//
+// Most browsers will display the <em> element with the following default values:
+// font-style: italic;
+//
+// Enable default false
+//
+// Created on : 22.01.2019, 11:36:51
+// Author     : nik
+
+@if $enable-html-elements-i {
+    i {
+        font-style: italic;
+        @include set-box-sizing-border-box;
+    }
+}

@@ -1,0 +1,24 @@
+//
+// HTML <tbody> element
+//
+// The HTML Table Body element (<tbody>) encapsulates a set of table row
+// (<tr> elements), indicating that they comprise the body of the table (<table>).
+// https://developer.mozilla.org/en-US/docs/Web/HTML/Element/tbody
+//
+// display: table-row-group;
+// vertical-align: middle;
+// border-color: inherit;
+//
+// Enable default false
+//
+// Created on : 22.01.2019, 06:29:24
+// Author     : nik
+
+@if $enable-html-elements-tbody {
+    tbody {
+        display: table-row-group;
+        border-color: inherit;
+        @include set-box-sizing-border-box;        
+        vertical-align: middle;
+    }
+}

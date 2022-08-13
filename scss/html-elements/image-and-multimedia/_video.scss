@@ -1,0 +1,19 @@
+//
+// HTML Video element (<video>) embeds a media player which supports video
+// playback into the document.
+//
+// https://www.w3.org/TR/2012/WD-html-markup-20121025/video.html
+// https://developer.mozilla.org/en-US/docs/Web/HTML/Element/video
+//
+// Default CSS Settings: None.
+//
+// Enable default false
+//
+// Created on : 21.01.2019, 12:46:59
+// Author     : nik
+
+@if $enable-html-elements-video {
+    video {
+        @include set-box-sizing-border-box;
+    }
+}

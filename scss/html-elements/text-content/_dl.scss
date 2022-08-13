@@ -1,0 +1,28 @@
+//
+// HTML <dl> element represents a description list.
+//
+// https://developer.mozilla.org/en-US/docs/Web/HTML/Element/dl
+//
+// Most browsers will display the <dl> element with the following default values:
+//
+// display: block;
+// margin-top: 1em;
+// margin-bottom: 1em;
+// margin-left: 0;
+// margin-right: 0;
+//
+// Enable default false
+//
+// Created on : 22.01.2019, 07:32:55
+// Author     : nik
+
+@if $enable-html-elements-dl {
+    dl {
+        display: block;
+        padding: $small-distance 0 $small-distance 0; // By Nik
+        border: 0;
+        @include set-box-sizing-border-box;
+        margin: 0;
+        list-style: disc;
+    }
+}

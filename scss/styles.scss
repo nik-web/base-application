@@ -1,0 +1,24 @@
+//
+// Main sass file
+//
+//
+// Created on : 24.02.2020, 12:46:30
+// Author     : nik
+
+// (1) Import functions files
+@import 'functions';
+
+// (2) Import variables files
+@import 'variables';
+
+// (3) Import mixins files
+@import 'mixins';
+
+// (4) Import font-faces files
+@import 'font-faces';
+
+// (5) Import html elements files
+@import 'html-elements';
+
+// (6) Iport html templates files
+@import 'html-templates';

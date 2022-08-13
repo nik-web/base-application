@@ -1,0 +1,27 @@
+//
+// HTML strong element in templates of this aplication
+//
+// Created on : 02.03.2020, 08:43:25
+// Author     : nik
+
+@if $enable-html-elements-strong {
+    @if $enable-nav-bar-brand {
+    /**
+    Partial nav-bar brand <strong> element if homepage
+    */
+        #brand-home {
+            @include brand($is-a-link: false);
+        }
+    }
+
+    @if $enable-nav-bar-meta {
+    /**
+    Partial nav-bar meta <strong> element
+    */
+        @media screen and (min-width: $meta-nav-breakpoint) {
+            .meta-nav-item-current strong {
+                color: $secondary-higlight-color;
+            }
+        }
+    }
+}

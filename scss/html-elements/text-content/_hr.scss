@@ -1,0 +1,27 @@
+//
+// HTML <hr> element (horizontal rule) represents a thematic break between 
+// paragraph-level elements
+//
+// https://developer.mozilla.org/en-US/docs/Web/HTML/Element/hr
+//
+// Most browsers will display the <hr> element with the following default values:
+//
+// display: block;
+// margin-top: 0.5em;
+// margin-bottom: 0.5em;
+// margin-left: auto;
+// margin-right: auto;
+// border-style: inset;
+// border-width: 1px;
+//
+// Enable default false
+//
+// Created on : 22.01.2019, 07:22:21
+// Author     : nik
+
+@if $enable-html-elements-hr {
+    hr {
+        display: block;
+        @include set-box-sizing-border-box;
+    }
+}

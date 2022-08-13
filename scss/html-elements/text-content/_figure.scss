@@ -1,0 +1,27 @@
+//
+// HTML <figure> element represents self-contained content, frequently with
+// a caption (<figcaption>), and is typically referenced as a single unit.
+//
+// https://developer.mozilla.org/en-US/docs/Web/HTML/Element/figure
+//
+// Most browsers will display the <figure> element with the following default values:
+//
+// display: block;
+// margin-top: 1em;
+// margin-bottom: 1em;
+// margin-left: 40px;
+// margin-right: 40px;
+//
+// Enable default false
+//
+// Created on : 22.01.2019, 07:37:15
+// Author     : nik
+
+@if $enable-html-elements-figure {
+    figure {
+        display: block;
+        margin: 0;
+        @include set-box-sizing-border-box;
+        padding: 0;
+    }
+}

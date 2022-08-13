@@ -1,0 +1,22 @@
+//
+// HTML <img> element embeds an image into the document.
+//
+// https://www.w3.org/TR/2012/WD-html-markup-20121025/img.html
+// https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img
+//
+// Most browsers will display the <img> element with the following default values:
+// display: inline-block;
+//
+// Enable default false
+//
+// Created on : 21.01.2019, 12:40:26
+// Author     : nik
+
+@if $enable-html-elements-img {
+    img {
+        display: inline-block;
+        padding: 0;
+        @include set-box-sizing-border-box;
+        margin: 0;
+    }
+}

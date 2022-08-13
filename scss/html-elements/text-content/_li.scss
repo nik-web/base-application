@@ -1,0 +1,30 @@
+//
+// HTML <li> element is used to represent an item in a list.
+//
+// It must be contained in a parent element: an ordered list (<ol>), an
+// unordered list (<ul>), or a menu (<menu>). In menus and unordered lists, list
+// items are usually displayed using bullet points. In ordered lists, they are
+// usually displayed with an ascending counter on the left, such as a number or letter.
+//
+// https://www.w3.org/TR/2012/WD-html-markup-20121025/li.html
+// https://www.w3schools.com/cssref/css_default_values.asp
+// https://developer.mozilla.org/en-US/docs/Web/HTML/Element/li
+//
+// Most browsers will display the <li> element with the following default values:
+//
+// display: list-item;
+//
+// Enable default false
+//
+// Created on : 22.01.2019, 07:30:15
+// Updated on : 11.02.2019, 12:07
+// Author     : nik
+
+@if $enable-html-elements-li {
+    li {
+        display: list-item;
+        margin: 0;
+        padding: 0;
+        @include set-box-sizing-border-box;
+    }
+}

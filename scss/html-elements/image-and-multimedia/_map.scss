@@ -1,0 +1,21 @@
+//
+// HTML <map> element is used with <area> elements to define an image map 
+// (a clickable link area).
+//
+// https://www.w3.org/TR/2012/WD-html-markup-20121025/map.html
+// https://developer.mozilla.org/en-US/docs/Web/HTML/Element/map
+//
+// Most browsers will display the <map> element with the following default values:
+// display: inline;
+//
+// Enable default false
+//
+// Created on : 21.01.2019, 12:51:51
+// Author     : nik
+
+@if $enable-html-elements-map {
+    map {
+        display: inline;
+        @include set-box-sizing-border-box;
+    }
+}

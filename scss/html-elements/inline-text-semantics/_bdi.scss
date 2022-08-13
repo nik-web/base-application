@@ -1,0 +1,14 @@
+//
+// HTML <bdi> element tells the browser's bidirectional algorithm to treat the 
+// text it contains in isolation from its surrounding text.
+//
+// Enable default false
+//
+// Created on : 22.01.2019, 10:55:21
+// Author     : nik
+
+@if $enable-html-elements-bdi {
+    bdi {
+        @include set-box-sizing-border-box;
+    }
+}

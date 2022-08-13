@@ -1,0 +1,12 @@
+//
+// Fluid-type mixin
+//
+// Use function scss/funktions/_strip-unit.scss
+//
+//
+// Created on : 26.02.2020, 08:34:41
+// Author     : nik
+
+@mixin fluid-type($min-screen-width, $max-screen-width, $min-font-size, $max-font-size) {
+    font-size: calc(#{$min-font-size} + (#{strip-unit($max-font-size - $min-font-size)}) * ((100vw - #{$min-screen-width}) / (#{strip-unit($max-screen-width - $min-screen-width)})));
+}

@@ -1,0 +1,21 @@
+//
+// HTML <u> element (Unarticulated Annotation Element) represents a span of 
+// inline text which should be rendered in a way that indicates that it has a 
+// non-textual annotation.
+//
+// https://developer.mozilla.org/en-US/docs/Web/HTML/Element/u
+//
+// Most browsers will display the <u> element with the following default values:
+// text-decoration: underline;
+//
+// Enable default false
+//
+// Created on : 22.01.2019, 11:54:13
+// Author     : nik
+
+@if $enable-html-elements-u {
+    u {
+        @include set-box-sizing-border-box;
+        text-decoration: underline;
+    }
+}

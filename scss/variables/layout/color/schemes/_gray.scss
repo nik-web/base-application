@@ -1,0 +1,30 @@
+//
+// Colors for the base color scheme
+//
+// This is a color scheme with shades of gray.
+//
+// Created on : 26.02.2020, 13:54:19
+// Author     : nik
+
+// Primary
+$primary-bg-color: $white; // For default <body>
+$primary-color: $dark-gray; // For default <body>
+$primary-higlight-color:  $very-dark-gray; // For brand, default <b> and <strong>
+$primary-border-color: $silver;
+
+// Secondary
+$secondary-bg-color: $dark-gray;
+$secondary-color: $light-gray;
+$secondary-higlight-color: $white;
+
+// Tertiary
+$tertiary-bg-color: $light-gray;
+$tertiary-color:  $black;
+
+// Quaternary
+$quaternary-bg-color: $very-light-gray; // very light
+$quaternary-color: $medium-gray; // medium
+
+// Senary
+$senary-bg-color: $medium-gray;
+$senary-color: $light-gray;

@@ -1,0 +1,39 @@
+//
+// HTML <select> element represents a control that provides a menu of options.
+//
+// https://www.w3.org/TR/2012/WD-html-markup-20121025/select.html
+// https://developer.mozilla.org/en-US/docs/Web/HTML/Element/select
+//
+// Default CSS Settings: None.
+//
+// Enable default false
+//
+// Created on : 21.01.2019, 12:23:34
+// Author     : nik
+
+@if $enable-html-elements-select {
+    select {
+        display: block;
+        min-width: 200px;
+        margin: 0;
+        outline: none;
+        border-width: 1px;
+        border-style: solid;
+        border-color: silver;
+        @include set-box-sizing-border-box;
+        padding: 0.175rem 1rem;
+        color: $very-dark-gray;
+        background-color: $very-light-gray;
+        letter-spacing: normal;
+        word-spacing: normal;
+        text-transform: none;
+        text-shadow: none;
+        text-align: start;
+        cursor: pointer;
+        font-size: 1rem;
+        font-family: $primary-font-family;
+        font-style: $primary-font-style;
+        font-variant: $primary-font-variant;
+        font-weight: $secondary-font-weight;
+    }
+}

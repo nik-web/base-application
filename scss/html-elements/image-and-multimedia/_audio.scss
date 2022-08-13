@@ -1,0 +1,18 @@
+//
+// HTML <audio> element is used to embed sound content in documents.
+//
+// https://www.w3.org/TR/2012/WD-html-markup-20121025/audio.html
+// https://developer.mozilla.org/en-US/docs/Web/HTML/Element/audio
+//
+// Default CSS Settings: None.
+//
+// Enable default false
+//
+// Created on : 21.01.2019, 12:48:17
+// Author     : nik
+
+@if $enable-html-elements-audio {
+    audio {
+        @include set-box-sizing-border-box;
+    }
+}

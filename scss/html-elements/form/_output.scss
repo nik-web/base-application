@@ -1,0 +1,23 @@
+//
+// The HTML Output element (<output>) is a container element into which a site or
+// app can inject the results of a calculation or the outcome of a user action.
+//
+// https://www.w3.org/TR/2012/WD-html-markup-20121025/output.html
+// https://html.spec.whatwg.org/multipage/form-elements.html#the-output-element
+// https://developer.mozilla.org/en-US/docs/Web/HTML/Element/output
+//
+// Most browsers will display the <output> element with the following default values:
+//
+// display: inline;
+//
+// Enable default false
+//
+// Created on : 21.01.2019, 12:32:16
+// Author     : nik
+
+@if $enable-html-elements-output {
+    output {
+        display: inline;
+        @include set-box-sizing-border-box;
+    }
+}

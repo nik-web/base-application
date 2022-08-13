@@ -1,0 +1,20 @@
+//
+// HTML <bdo> element overrides the current directionality of text, so that the 
+// text within is rendered in a different direction.
+//
+// https://developer.mozilla.org/en-US/docs/Web/HTML/Element/bdo
+// https://www.w3schools.com/tags/tag_bdo.asp
+//
+// Most browsers will display the <bdo> element with the following default values:
+// unicode-bidi: bidi-override;
+//
+// Enable default false
+//
+// Created on : 22.01.2019, 10:56:20
+// Author     : nik
+
+@if $enable-html-elements-bdo {
+    bdo {
+        @include set-box-sizing-border-box;
+    }
+}

@@ -1,0 +1,35 @@
+//
+// Config used html templates
+//
+// Set the variables for the used html templates to true
+//
+// Created on : 03.03.2020, 08:56:47
+// Author     : nik
+
+// Layout default templatename "layout/layout"
+// Layout site header <header> html element enable or disable
+$enable-site-header: true;
+// Layout container <div> html element with fluid width and max. width enable or disable
+$enable-site-width-container: true;
+// Layout this ID for main wrapper <div> html element to create a sticky footer enable or disable
+$enable-create-sticky-footer: true;
+// Layout site nav html <nav> element enable or disable
+$enable-site-nav: true;
+// Layout site footer <footer> html element enable or disable
+$enable-site-footer: true;
+// Layout copyright notice a html <small> element enable or disable
+$enable-copyright-notice: true;
+
+// Partials
+// Partial(partial/nav-bar/brand) navigation bar brand a html <a> and <strong>  element enable or disable
+$enable-nav-bar-brand: true;
+// Partial navigation bar main a html <ul> element enable or disable
+$enable-nav-bar-main: true;
+// Partial(partial/nav-bar/meta) navigation bar meta a html <ul> element enable or disable
+$enable-nav-bar-meta: true;
+
+// Content
+// Content main header <header> html element element enable or disable
+$enable-main-header: true;
+// Content main header paragraph <p> html element enable or disable
+$enable-main-header-p: true;

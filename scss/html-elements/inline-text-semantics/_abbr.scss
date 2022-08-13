@@ -1,0 +1,25 @@
+//
+// HTML <abbr> element represents an abbreviation or acronym;
+// the optional title attribute can provide an expansion or description for the 
+// abbreviation.
+//
+// https://developer.mozilla.org/en-US/docs/Web/HTML/Element/abbr
+//
+// Most browsers will display the <abbr> element with the following default values:
+// display: inline;
+// abbr[title] {
+//      text-decoration: underline dotted;
+// }
+//
+// Enable default false
+//
+// Created on : 22.01.2019, 10:54:34
+// Author     : nik
+
+@if $enable-html-elements-abbr {
+    abbr {
+        display: inline;
+        @include set-box-sizing-border-box;
+        text-decoration: none;
+    }
+}

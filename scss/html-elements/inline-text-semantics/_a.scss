@@ -1,0 +1,71 @@
+//
+//  HTML <a> element (or anchor element)
+//
+// The a element represents a hyperlink.
+// https://www.w3.org/TR/2012/WD-html-markup-20121025/a.html#a
+// The HTML <a> element (or anchor element) creates a hyperlink to other web
+// pages, files, locations within the same page, email addresses, or any other URL.
+// https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a
+//
+// Default css values
+// https://www.w3schools.com/cssref/css_default_values.asp
+// a:link
+// color: (internal value);
+// text-decoration: underline;
+// cursor: auto;
+// a:visited
+// color: (internal value);
+// text-decoration: underline;
+// cursor: auto;
+// a:link:active
+// color: (internal value);
+// a:visited:active
+// color: (internal value);
+//
+// 1. Eric Meyer’s “Reset CSS” 2.0
+// 2. Change from `box-sizing: content-box` so that `width` is not affected
+// 3. Override default
+//
+// https://www.mediaevent.de/css/userinterface-outline.html
+//
+// Enable default false
+//
+// Created on : 13.01.2019, 08:20:30
+// Updated on : 10.02.2019, 11:16
+// Author     : nik
+
+@if $enable-html-elements-a {
+    a, a:link, a:visited, a:focus, a:hover, a:active {
+        margin: 0; // 1
+        border: 0; // 1
+        padding: 0; // 1
+        @include set-box-sizing-border-box; // 2
+        outline: none;
+        background-color: transparent;
+        cursor: pointer; // 3
+        text-decoration: underline;
+    }
+    
+    a, a:link {
+        color: $link-color;
+    }
+
+    a:visited {
+        color: $link-visited-color;
+    }
+
+    a:focus {
+        color: $link-hover-color;
+        outline-color: invert; // default
+        outline-width: 1px; // by nik
+        outline-style: dotted;
+    }
+    
+    a:hover {
+        color: $link-hover-color;
+    }
+
+    a:active {
+        color: $link-active-color;
+    }
+}

@@ -1,0 +1,40 @@
+//
+// HTML button element in templates of this aplication
+//
+// Created on : 01.04.2020, 18:44:28
+// Author     : nik
+
+@if $enable-html-elements-button {
+    
+    @if $enable-nav-bar-main {
+    /*
+    Partial nav-bar main <button> elements
+    */
+        .main-nav-button {
+            display: block;
+            width: 100%;
+            border: none;
+        }
+
+        .main-nav-button-active,
+        .main-nav-button:hover {
+            color: $secondary-higlight-color;
+            border: none;
+        }
+        // Hamburg-button for main nav <button> element        
+        .hamburg {
+            display: block;
+            width: 40px;
+            height: 26px;
+            background: $senary-bg-color; 
+            position: relative;
+            margin: $very-small-distance $very-small-distance $very-small-distance auto;
+            border-radius: 3px;
+        }    
+        @media screen and (min-width: $main-nav-breakpoint) {
+            .hamburg {
+                display: none;
+            }
+        }
+    }
+}

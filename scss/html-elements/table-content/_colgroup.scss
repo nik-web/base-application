@@ -1,0 +1,19 @@
+//
+// HTML <colgroup> element defines a group of columns within a table.
+//
+// https://developer.mozilla.org/en-US/docs/Web/HTML/Element/colgroup
+//
+// Most browsers will display the <colgroup> element with the following default values:
+// display: table-column-group;
+//
+// Enable default false
+//
+// Created on : 22.01.2019, 06:26:31
+// Author     : nik
+
+@if $enable-html-elements-colgroup {
+    colgroup {
+        display: table-column-group;
+        @include set-box-sizing-border-box;
+    }
+}

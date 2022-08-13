@@ -1,0 +1,33 @@
+//
+// HTML element main
+//
+// The <main> element specifies the main content of a document
+//
+// Default css values
+// https://www.w3schools.com/cssref/css_default_values.asp
+// None
+//
+// 1. Eric Meyer’s “Reset CSS” 2.0
+// 2. Render these used elements consistently in IE.
+// 3. Change from `box-sizing: content-box` so that `width` is not affected
+//
+// Use the element only once on one page for the main content.
+// Every page has this element
+// Enable default true
+//
+// Created on : 12.01.2019, 08:54:42
+// Author     : nik
+
+@if $enable-html-elements-main {
+/*
+The <main> html element
+*/
+    main {
+        display: block; // 2
+        margin: 0; // 1
+        border: 0; // 1
+        padding: 0 0 $max-distance 0; // 1
+        @include set-box-sizing-border-box; // 3
+        //@include hyphens(auto);
+    }
+}

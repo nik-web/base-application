@@ -1,0 +1,22 @@
+//
+// HTML form element in templates of this aplication
+//
+// Created on : 19.04.2020, 10:14:02
+// Author     : nik
+
+@if $enable-html-elements-form {
+    /*
+    The <form> html element stands alone on one side
+    */
+    .stands-alone-form {
+        max-width: 600px;
+        margin: 0 auto 0 auto;
+    }
+    
+    /*
+    The <form> html element stands not alone on one side
+    */
+    .stands-not-alone-form {
+        max-width: 700px;
+    }
+}

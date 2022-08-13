@@ -1,0 +1,28 @@
+//
+// HTML <label> element represents a caption for an item in a user interface.
+//
+// https://www.w3.org/TR/2012/WD-html-markup-20121025/label.html
+// https://developer.mozilla.org/en-US/docs/Web/HTML/Element/label
+//
+// Most browsers will display the <label> element with the following default values:
+//
+// cursor: default;
+//
+// Enable default false
+//
+// Created on : 21.01.2019, 12:19:09
+// Author     : nik
+
+@if $enable-html-elements-label {
+    /*
+    The <label> html element
+    */
+    label {
+        margin: 0;
+        border: 0;
+        padding: 0;
+        @include set-box-sizing-border-box;
+        //padding-top: $distance;
+        cursor: default;
+    }
+}

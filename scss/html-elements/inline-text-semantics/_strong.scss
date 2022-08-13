@@ -1,0 +1,21 @@
+//
+// HTML <strong> element indicates that its contents have strong importance, 
+// seriousness, or urgency.
+//
+// https://developer.mozilla.org/en-US/docs/Web/HTML/Element/strong
+//
+// Most browsers will display the <strong> element with the following default values:
+// font-weight: bold;
+//
+// Enable default false
+//
+// Created on : 22.01.2019, 11:50:24
+// Author     : nik
+
+@if $enable-html-elements-strong {
+    strong {
+        @include set-box-sizing-border-box;
+        color: $primary-higlight-color;
+        font-weight: $primary-higlight-font-weight;
+    }
+}

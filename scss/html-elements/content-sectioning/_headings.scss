@@ -1,0 +1,51 @@
+//
+// HTML heading elements
+//
+// The <h1> through h6 elements are headings for the sections with which they are associated.
+// https://www.w3.org/TR/2012/WD-html-markup-20121025/h1.html#h1
+// https://developer.mozilla.org/en-US/docs/Web/HTML/Element/Heading_Elements
+//
+// Default css values
+// https://www.w3schools.com/cssref/css_default_values.asp
+// 
+// 1. Eric Meyer’s “Reset CSS” 2.0
+// 2. Change from `box-sizing: content-box` so that `width` is not affected
+// 3. Default CSS values
+//
+// By default use this headings ( h1, h2, h3 )
+//
+// Created on : 13.01.2019, 10:52:22
+// Author     : nik
+
+@if $enable-html-elements-headings {
+/*
+The <h1>, <h2>, <h3> html elements
+*/
+    h1, h2, h3 {
+        display: block; // default 
+        padding: 0; // 1
+        border: 0; // 1
+        @include set-box-sizing-border-box; // 2
+        margin: $smaller-distance 0 $very-small-distance 0;
+        font-weight: $headings-font-weight;
+        line-height: $headings-line-height;
+        vertical-align: baseline; // 1
+        color: $headings-color;
+        @include hyphens(auto);
+    }
+
+    h1 {
+        font-size: $first-heading-font-size;
+        //margin: $smaller-distance 0 $very-small-distance 0;
+    }
+
+    h2 {
+        font-size: $second-heading-font-size;
+        //margin: $smaller-distance 0 $very-small-distance 0;
+    }
+
+    h3 {
+        font-size: $third-heading-font-size;
+        //margin: $smaller-distance 0 $very-small-distance 0;
+    }
+}

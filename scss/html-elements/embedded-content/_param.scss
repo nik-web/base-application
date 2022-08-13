@@ -1,0 +1,19 @@
+//
+// The HTML <param> element defines parameters for an <object> element.
+//
+// https://www.w3.org/TR/2012/WD-html-markup-20121025/param.html
+// https://developer.mozilla.org/en-US/docs/Web/HTML/Element/param
+//
+// Enable default false
+//
+// Created on : 23.01.2019, 09:01:18
+// Author     : nik
+
+@if $enable-html-elements-param {
+    /*
+    The <param> html element
+    */
+    param {
+        display: none;
+    }
+}

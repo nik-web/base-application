@@ -1,0 +1,34 @@
+//
+// HTML header element  in templates of this aplication
+//
+// Created on : 28.02.2020, 10:44:53
+// Author     : nik
+
+@if $enable-html-elements-header {
+    
+    @if $enable-site-header {
+    /*
+    Layout segment site header <header> html element
+    */
+        #site-header {
+            padding-top: $small-distance;
+            padding-bottom: $small-distance;
+            background-color: $site-header-bg-color;
+        }
+    }
+    
+    @if $enable-main-header {
+    /*
+    Content main header <header> html element
+    */
+        #main-header {
+            margin-top: $distance;
+            padding-top: $small-distance;
+            padding-right: $distance;
+            padding-bottom: $distance;
+            padding-left: $large-distance;
+            background-color: $main-header-bg-color;
+            @include hyphens(auto);
+        }
+    }
+}

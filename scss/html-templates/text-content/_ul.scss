@@ -1,0 +1,78 @@
+//
+// HTML ul element in templates of this aplication
+//
+// Created on : 03.03.2020, 11:12:47
+// Author     : nik
+
+@if $enable-html-elements-ul {
+
+    @if $enable-nav-bar-meta {
+    /**
+    Partial nav-bar meta <ul> element
+    */
+        #meta-nav-bar {
+            display: flex;
+            flex-direction: column;
+            padding: 0;
+            font-weight: $nav-bar-meta-font-weight;
+            overflow: hidden;
+            list-style: none;
+        }
+        @media screen and (min-width: $meta-nav-breakpoint) {
+            #meta-nav-bar {
+                flex-direction: row;
+                justify-content: center;
+            }
+        }
+    }
+
+    @if $enable-nav-bar-main {
+    /**
+    Partial nav-bar main <ul> element
+    */
+        #main-nav-bar {
+            display: none;
+            padding-bottom: $small-distance;
+            padding-left: 0;
+            font-weight: $nav-bar-main-font-weight;
+            list-style: none;
+        }
+
+        .open-main-nav-bar {
+            display: flex !important;
+            flex-direction: column;
+        }
+
+        .main-nav-bar-dropdown {
+            display: none;
+            padding: 0;
+            margin-top: $small-distance;
+            border-top: 1px solid $nav-bar-main-border-color;
+            background-color: $dark-gray;
+        }
+
+        .main-nav-bar-dropdown-show {
+            display: block;
+        }
+
+        @media screen and (min-width: $main-nav-breakpoint) {
+            #main-nav-bar {
+                display: flex;
+                flex-direction: row;
+                padding: 0 $distance 0 0;
+                border: none;
+                justify-content: flex-end;
+            }
+
+            .main-nav-bar-dropdown {
+                position: absolute;
+                top: 100%;
+                //left: 0;
+                right: 0;
+                z-index: 2000;
+                margin-top: 0;
+            }
+        }
+    }
+    
+}

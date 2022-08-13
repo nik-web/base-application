@@ -1,0 +1,61 @@
+//
+// HTML <button> element represents a clickable button, used to submit forms or 
+// anywhere in a document for accessible, standard button functionality.
+//
+// Inside a <button> element you can put content, inline elements <span>, like text or images.
+//
+// The <button> element is a multipurpose element for representing buttons.
+// https://www.w3.org/TR/2012/WD-html-markup-20121025/button.html
+// https://developer.mozilla.org/en-US/docs/Web/HTML/Element/button
+//
+// Default css values
+// https://www.w3schools.com/cssref/css_default_values.asp
+//
+// Enable default false
+//
+// 1. Remove the margin in Firefox and Safari
+// 2. Remove the border and the default `border-radius` that macOS Chrome adds.
+// 3. Show the overflow in Edge
+// 4. Remove the inheritance of text transform in Firefox
+//
+//
+// Created on : 13.01.2019, 14:58:58
+// Updated on : 11.02.2019, 10:08
+// Author     : nik
+
+@if $enable-html-elements-button {
+    /*
+    The <button> html element
+    */
+    button {
+        display: inline-block;
+        padding: 0;
+        border: 1px solid $buttons-border-color;
+        margin: 0;
+        overflow: visible; //3
+        @include set-box-sizing-border-box;
+        font-size: inherit;
+        font-family: inherit;
+        font-style: inherit;
+        font-variant: inherit;
+        font-weight: $secondary-font-weight;
+        letter-spacing: inherit;
+        word-spacing: inherit;
+        color: inherit;
+        background: transparent;
+        text-align: center;
+        text-transform: none; // 4
+        white-space: nowrap;
+        cursor: pointer;
+    }
+
+    // Work around a Firefox/IE bug where the transparent `button` background
+    // results in a loss of the default `button` focus styles.
+    //
+    // Credit: https://github.com/suitcss/base/
+    button:focus {
+        outline: none;
+        //outline: 1px dotted;
+        //outline: 5px auto -webkit-focus-ring-color;
+    }
+}

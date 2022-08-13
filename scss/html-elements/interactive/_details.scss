@@ -1,0 +1,22 @@
+//
+// HTML <details> element creates a disclosure widget in which information is 
+// visible only when the widget is toggled into an "open" state.
+//
+// https://developer.mozilla.org/en-US/docs/Web/HTML/Element/details
+//
+// Most browsers will display the <details> element with the following default values:
+// display: block;
+//
+// The details tag is not supported in Internet Explorer!
+//
+// Enable default false
+//
+// Created on : 21.01.2019, 13:01:30
+// Author     : nik
+
+@if $enable-html-elements-details {
+    details {
+        display: block;
+        @include set-box-sizing-border-box;
+    }
+}

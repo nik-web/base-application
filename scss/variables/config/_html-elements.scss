@@ -1,0 +1,122 @@
+//
+// Config used html elements
+//
+// Set the variables for the used html elements to true
+// 
+// Created on : 27.02.2020, 12:15:09
+// Author     : nik
+
+// HTML content-sectioning elements
+$enable-html-elements-address: false;
+$enable-html-elements-article: false;
+$enable-html-elements-aside: false;
+$enable-html-elements-footer: true;
+$enable-html-elements-header: true;
+$enable-html-elements-headings: true;
+$enable-html-elements-hgroup: false;
+$enable-html-elements-main: true;
+$enable-html-elements-nav: true;
+$enable-html-elements-section: true;
+
+// HTML demarcating-edits elements
+$enable-html-elements-del: false;
+$enable-html-elements-ins: false;
+
+// HTML embedded-content elements
+$enable-html-elements-embed: false;
+$enable-html-elements-iframe: false;
+$enable-html-elements-object: false;
+$enable-html-elements-param: false;
+$enable-html-elements-picture: false;
+$enable-html-elements-source: false;
+
+// HTML forms elemets
+$enable-html-elements-button: true;
+$enable-html-elements-datalist: false;
+$enable-html-elements-fieldset: false;
+$enable-html-elements-form: false;
+$enable-html-elements-input: false;
+
+$enable-html-elements-input-for-text: false;
+$enable-html-elements-input-checkbox: false;
+$enable-html-elements-input-submit: false;
+$enable-html-elements-input-radio: false;
+
+$enable-html-elements-label: false;
+$enable-html-elements-legend: false;
+$enable-html-elements-meter: false;
+$enable-html-elements-optgroup: false;
+$enable-html-elements-option: false;
+$enable-html-elements-output: false;
+$enable-html-elements-progress: false;
+$enable-html-elements-select: false;
+$enable-html-elements-textarea: false;
+
+// HTML image and multimedia elements
+$enable-html-elements-area: false;
+$enable-html-elements-audio: false;
+$enable-html-elements-img: false;
+$enable-html-elements-map: false;
+$enable-html-elements-svg: false;
+$enable-html-elements-track: false;
+$enable-html-elements-video: false;
+
+// HTML inline text semantics elements
+$enable-html-elements-a: true;
+$enable-html-elements-abbr: false;
+$enable-html-elements-b: false;
+$enable-html-elements-bdi: false;
+$enable-html-elements-bdo: false;
+$enable-html-elements-br: false;
+$enable-html-elements-cite: false;
+$enable-html-elements-code: false;
+$enable-html-elements-data: false;
+$enable-html-elements-dfn: false;
+$enable-html-elements-em: false;
+$enable-html-elements-i: false;
+$enable-html-elements-kbd: false;
+$enable-html-elements-mark: false;
+$enable-html-elements-q: false;
+$enable-html-elements-samp: false;
+$enable-html-elements-small: true;
+$enable-html-elements-span: true;
+$enable-html-elements-strong: true;
+$enable-html-elements-sub: false;
+$enable-html-elements-sup: false;
+$enable-html-elements-time: false;
+$enable-html-elements-u: false;
+$enable-html-elements-var: false;
+$enable-html-elements-wbr: false;
+
+// HTML interactive elemets
+$enable-html-elements-details: false; // not supported in Internet Explorer
+$enable-html-elements-dialog: false;
+$enable-html-elements-menu: false; // poor browser compatibility
+$enable-html-elements-summary: false; // poor browser compatibility
+
+// HTML table content elements
+$enable-html-elements-caption: false;
+$enable-html-elements-col: false;
+$enable-html-elements-colgroup: false;
+$enable-html-elements-table: false;
+$enable-html-elements-tbody: false;
+$enable-html-elements-td: false;
+$enable-html-elements-tfoot: false;
+$enable-html-elements-th: false;
+$enable-html-elements-thead: false;
+$enable-html-elements-tr: false;
+
+// HTML text content elements
+$enable-html-elements-blockquote: false;
+$enable-html-elements-dd: false;
+$enable-html-elements-div: true;
+$enable-html-elements-dl: false;
+$enable-html-elements-dt: false;
+$enable-html-elements-figure: false;
+$enable-html-elements-figcaption: false;
+$enable-html-elements-hr: false;
+$enable-html-elements-li: true;
+$enable-html-elements-ol: false;
+$enable-html-elements-p: true;
+$enable-html-elements-pre: false;
+$enable-html-elements-ul: true;

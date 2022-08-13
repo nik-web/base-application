@@ -1,0 +1,20 @@
+//
+// The HTML <option> element is used to define an item contained in a <select>,
+// an <optgroup>, or a <datalist> element. As such, <option> can represent menu 
+// items in popups and other lists of items in an HTML document.
+//
+// https://www.w3.org/TR/2012/WD-html-markup-20121025/option.html
+// https://developer.mozilla.org/en-US/docs/Web/HTML/Element/option
+//
+// Default CSS Settings: None.
+//
+// Enable default false
+//
+// Created on : 21.01.2019, 12:29:06
+// Author     : nik
+
+@if $enable-html-elements-option {
+    option {
+        @include set-box-sizing-border-box;
+    }
+}

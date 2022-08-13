@@ -1,0 +1,27 @@
+//
+// HTML Inline Frame element (<iframe>)
+//
+// The <iframe> tag specifies an inline frame.
+//
+// An inline frame is used to embed another document within the current HTML document
+//
+// https://www.w3.org/TR/2012/WD-html-markup-20121025/iframe.html
+// https://developer.mozilla.org/en-US/docs/Web/HTML/Element/iframe
+//
+// Enable default false
+//
+// Created on : 23.01.2019, 08:58:00
+// Author     : nik
+
+@if $enable-html-elements-iframe {
+    /*
+    The <iframe> html element
+    */
+    iframe {
+        @include set-box-sizing-border-box;
+    }
+    
+    iframe:focus {
+        outline: none;
+    }
+}
